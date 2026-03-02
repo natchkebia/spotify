@@ -140,5 +140,33 @@ body {
     gap: 1.3rem;
   }
 }
+.sidebar {
+  width: 26.2rem;
+  height: 100vh;
+  background-color: var(--main-bg);
+  padding-left: 1.1rem;
+  padding-top: 1.1rem;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--text-color);
+  width: 100%;
+}
+.sidebar-link span {
+  font-size: var(--normal-text-size);
+}
+
+.has-arrow a {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.has-arrow a .link-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 /*# sourceMappingURL=style.css.map */
