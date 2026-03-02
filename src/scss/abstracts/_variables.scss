@@ -1,5 +1,6 @@
 :root {
   --text-color: #898989;
+  --text-clicked-color: #e0e0e0;
   --font-family: "Satoshi";
   --text-size: 1.4rem;
   --font-size: 62.5%;
@@ -7,4 +8,9 @@
   --regular-weight: 400;
   --medium-weight: 500;
   --bold-weight: 700;
+  // font-sizes
+  --normal-text-size: 1.4rem;
+  // bg colors
+  --main-bg: #060606;
+  --header-nav-clikced-bg: #20202080;
 }

@@ -10,3 +10,15 @@
   justify-content: center;
   flex-direction: column;
 }
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
