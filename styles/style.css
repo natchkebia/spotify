@@ -155,6 +155,9 @@ body {
   color: var(--text-color);
   width: 100%;
 }
+.sidebar-link span {
+  font-size: var(--normal-text-size);
+}
 
 .has-arrow a {
   justify-content: space-between;
