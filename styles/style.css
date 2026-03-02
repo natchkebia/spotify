@@ -1,16 +1,22 @@
 :root {
   --text-color: #898989;
+  --text-clicked-color: #e0e0e0;
   --font-family: "Satoshi";
   --text-size: 1.4rem;
   --font-size: 62.5%;
   --regular-weight: 400;
   --medium-weight: 500;
   --bold-weight: 700;
+  --normal-text-size: 1.4rem;
+  --main-bg: #060606;
+  --header-nav-clikced-bg: #20202080;
 }
 
 *,
 *::before,
 *::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -80,6 +86,59 @@ html {
 
 body {
   font-family: "Satoshi", sans-serif;
+}
+
+@media (min-width: 1771px) {
+  .header {
+    height: 5.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+  }
+  .header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header .navigation .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .header .navigation .nav-links .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: var(--normal-text-size);
+    font-weight: var(--regular-weight);
+  }
+  .header .navigation .nav-links .nav-item:first-child {
+    width: 26.2rem;
+  }
+  .header .navigation .nav-links .nav-item:nth-child(2) {
+    background-color: var(--header-nav-clikced-bg);
+    border-radius: 1rem;
+    width: 19.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-clicked-color);
+  }
+  .header .navigation .nav-links .nav-item:nth-child(3) {
+    width: 21rem;
+  }
+  .header .navigation .nav-links .nav-item:nth-child(4) {
+    width: 35rem;
+  }
+  .header .navigation .user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

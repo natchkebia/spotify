@@ -1,0 +1,48 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/reset";
+
+@media (min-width: 1771px) {
+  .header {
+    height: 5.4rem;
+    @include mixins.flex-center;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    .navigation {
+      @include mixins.flex-between();
+      width: 100%;
+      .nav-links {
+        @include mixins.flex-between();
+        gap: 1rem;
+        .nav-item {
+          .nav-link {
+            @include mixins.flex-row();
+            gap: 1rem;
+            font-size: var(--normal-text-size);
+            font-weight: var(--regular-weight);
+          }
+        }
+        .nav-item:first-child {
+          width: 26.2rem;
+        }
+        .nav-item:nth-child(2) {
+          background-color: var(--header-nav-clikced-bg);
+          border-radius: 1rem;
+          width: 19.5rem;
+          padding-left: 1.5rem;
+          color: var(--text-clicked-color);
+        }
+        .nav-item:nth-child(3) {
+          width: 21rem;
+        }
+        .nav-item:nth-child(4) {
+          width: 35rem;
+        }
+      }
+      .user-menu {
+        @include mixins.flex-between();
+        gap: 1.3rem;
+      }
+    }
+  }
+}
