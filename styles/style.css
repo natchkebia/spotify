@@ -101,6 +101,7 @@ html {
 
 body {
   font-family: "Satoshi", sans-serif;
+  background-color: rgb(6, 6, 6);
 }
 
 .header {
@@ -148,6 +149,15 @@ body {
     padding: 0;
     background: transparent;
     overflow: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+  .hero {
+    display: block;
+  }
+  .cards {
+    width: 100%;
   }
   .main {
     padding-bottom: 10.5rem;
@@ -204,6 +214,9 @@ body {
   .mobile-navigation {
     display: none;
   }
+  .sidebar {
+    display: block;
+  }
   .main {
     padding-bottom: 0;
   }
@@ -242,6 +255,10 @@ body {
     display: none;
   }
 }
+.main > div {
+  display: flex;
+}
+
 .home-content {
   max-width: 149.1rem;
   width: 100%;

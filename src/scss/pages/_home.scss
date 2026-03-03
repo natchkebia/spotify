@@ -2,8 +2,12 @@
 @use "../abstracts/variables" as v;
 
 // main page main content
+.main > div {
+  display: flex;
+}
+
 .home-content {
- @include m.scroll-container;
+  @include m.scroll-container;
   background-color: v.$main-backround-color;
   border: 0.1rem solid v.$border-soft;
 

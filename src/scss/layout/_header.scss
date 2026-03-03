@@ -52,6 +52,18 @@
     overflow: hidden;
   }
 
+  .sidebar {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
   .main {
     padding-bottom: 10.5rem;
   }
@@ -115,6 +127,10 @@
 
   .mobile-navigation {
     display: none;
+  }
+
+  .sidebar {
+    display: block;
   }
 
   .main {
