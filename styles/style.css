@@ -417,7 +417,7 @@ body {
 .home-content .browse-card .media-card__img span {
   margin: 2rem 2.1rem;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: 900 !important;
   width: 50%;
   z-index: 2;
