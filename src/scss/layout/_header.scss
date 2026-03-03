@@ -3,6 +3,9 @@
 @use "../base/reset";
 
 @media (min-width: 1771px) {
+  .mobile-navigation {
+    display: flex;
+  }
   .header {
     height: 5.4rem;
     @include mixins.flex-center;
