@@ -63,6 +63,13 @@
 }
 
 @media (max-width: 390px) {
+  .header {
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+    background-color: none;
+  }
   .navigation {
     display: none;
   }
