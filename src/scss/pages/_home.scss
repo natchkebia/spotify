@@ -20,6 +20,10 @@
     flex-direction: column;
     gap: 3rem;
 
+    .recently-played {
+      display: none;
+    }
+
     // home__filters--wrapper
 
     .home__filters--wrapper {
