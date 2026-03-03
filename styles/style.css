@@ -50,25 +50,38 @@ ol {
 
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/fonts/Satoshi-Light.woff2") format("woff2");
+  src: url("/src/assets/fonts/fonts/Satoshi-Light.woff2") format("woff2"), url("/src/assets/fonts/fonts/Satoshi-Light.woff") format("woff"), url("/src/assets/fonts/fonts/Satoshi-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../assets/fonts/fonts/Satoshi-Medium.woff2") format("woff2");
+  src: url("/src/assets/fonts/fonts/Satoshi-Regular.woff2") format("woff2"), url("/src/assets/fonts/fonts/Satoshi-Regular.woff") format("woff"), url("/src/assets/fonts/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/fonts/Satoshi-Medium.woff2") format("woff2"), url("/src/assets/fonts/fonts/Satoshi-Medium.woff") format("woff"), url("/src/assets/fonts/fonts/Satoshi-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../assets/fonts/fonts/Satoshi-Bold.woff2") format("woff2");
+  src: url("/src/assets/fonts/fonts/Satoshi-Bold.woff2") format("woff2"), url("/src/assets/fonts/fonts/Satoshi-Bold.woff") format("woff"), url("/src/assets/fonts/fonts/Satoshi-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/fonts/Satoshi-Black.woff2") format("woff2");
+  src: url("/src/assets/fonts/fonts/Satoshi-Black.woff2") format("woff2"), url("/src/assets/fonts/fonts/Satoshi-Black.woff") format("woff"), url("/src/assets/fonts/fonts/Satoshi-Black.ttf") format("truetype");
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 html {
   font-size: 62.5%;
@@ -102,6 +115,39 @@ body {
   flex-direction: column;
   gap: 3rem;
 }
+.home-content .home-section .home__filters--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-content .home-section .home__filters--wrapper .home__section--filters {
+  display: flex;
+  gap: 1rem;
+}
+.home-content .home-section .home__filters--wrapper .filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  background-color: rgba(32, 32, 32, 0.5);
+  color: rgb(224, 224, 224);
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.home-content .home-section .home__filters--wrapper .filter-btn:hover {
+  background-color: rgb(224, 224, 224);
+  color: rgb(17, 17, 17);
+}
+.home-content .home-section .home__filters--wrapper .filter-btn.active {
+  background-color: rgb(224, 224, 224);
+  color: rgb(17, 17, 17);
+  font-weight: 700;
+}
 .home-content .home-section .home-section__head {
   display: flex;
   align-items: center;
@@ -120,12 +166,13 @@ body {
 }
 .home-content .home-section__row {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   gap: 1.1rem;
   margin: 0 auto;
   margin-top: 1.5rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .home-content .home-section__row .media-card {
   display: flex;
@@ -134,78 +181,99 @@ body {
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-.home-content .home-section__row .media-card .media-card__meta {
+.home-content .home-section__row .media-card .media-card__meta,
+.home-content .home-section__row .media-card .media-card__img {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  max-width: 17rem;
-  width: 100%;
+  width: 17rem;
 }
 .home-content .home-section__row .media-card .media-card__meta h4,
-.home-content .home-section__row .media-card .media-card__meta span {
+.home-content .home-section__row .media-card .media-card__meta span,
+.home-content .home-section__row .media-card .media-card__img h4,
+.home-content .home-section__row .media-card .media-card__img span {
   font-size: 1.4rem;
   color: rgb(224, 224, 224);
   font-weight: 500;
 }
-.home-content .home-section__row .media-card .media-card__meta p {
+.home-content .home-section__row .media-card .media-card__meta p,
+.home-content .home-section__row .media-card .media-card__img p {
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
   font-weight: 400;
 }
-.home-content .home-section__row .media-card .media-card__meta span {
+.home-content .home-section__row .media-card .media-card__meta span,
+.home-content .home-section__row .media-card .media-card__img span {
   font-weight: 400;
 }
-.home-content .home-section__row .media-card .media-card__meta div {
+.home-content .home-section__row .media-card .media-card__meta div,
+.home-content .home-section__row .media-card .media-card__img div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs {
   color: rgb(206, 110, 154);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs1 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs1,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs1 {
   color: rgb(149, 230, 211);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs2 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs2,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs2 {
   color: rgb(244, 184, 189);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs3 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs3,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs3 {
   color: rgb(195, 231, 183);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs4 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs4,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs4 {
   color: rgb(243, 127, 166);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs5 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs5,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs5 {
   color: rgb(160, 190, 200);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs6 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs6,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs6 {
   color: rgb(253, 216, 125);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs7 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs7,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs7 {
   color: rgb(212, 178, 169);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs8 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs8,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs8 {
   color: rgb(204, 246, 101);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs9 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs9,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs9 {
   color: rgb(249, 231, 44);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs10 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs10,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs10 {
   color: rgb(155, 240, 226);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs11 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs11,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs11 {
   color: rgb(111, 134, 255);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs12 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs12,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs12 {
   color: rgb(255, 203, 212);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs13 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs13,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs13 {
   color: rgb(255, 198, 104);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs14 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs14,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs14 {
   color: rgb(39, 133, 107);
 }
-.home-content .home-section__row .media-card .media-card__meta .Number-of-songs15 {
+.home-content .home-section__row .media-card .media-card__meta .Number-of-songs15,
+.home-content .home-section__row .media-card .media-card__img .Number-of-songs15 {
   color: rgb(221, 19, 139);
 }
 .home-content .home-section__row .media-card:hover {
@@ -241,6 +309,7 @@ body {
   justify-content: center;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 .home-content .searches__wrapper .searches__sectio > div .close_button img {
   width: 1.7rem;
@@ -275,38 +344,152 @@ body {
   color: rgb(224, 224, 224);
   font-weight: 500;
 }
-.home-content .home__filters--wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.home-content .browse-card .card1 {
+  background-color: rgb(30, 50, 100);
 }
-.home-content .home__filters--wrapper .home__section--filters {
-  display: flex;
-  gap: 1rem;
+.home-content .browse-card .card2 {
+  background-color: rgb(186, 93, 7);
 }
-.home-content .home__filters--wrapper .filter-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  outline: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.8rem;
-  background-color: rgba(32, 32, 32, 0.5);
-  color: rgb(224, 224, 224);
-  font-size: 1.4rem;
-  font-weight: 400;
-  cursor: pointer;
-  transition: all 0.2s ease;
+.home-content .browse-card .card3 {
+  background-color: rgb(30, 50, 100);
 }
-.home-content .home__filters--wrapper .filter-btn:hover {
-  background-color: rgb(224, 224, 224);
-  color: rgb(17, 17, 17);
+.home-content .browse-card .card4 {
+  background-color: rgb(141, 103, 171);
 }
-.home-content .home__filters--wrapper .filter-btn.active {
-  background-color: rgb(224, 224, 224);
-  color: rgb(17, 17, 17);
-  font-weight: 700;
+.home-content .browse-card .card5 {
+  background-color: rgb(176, 40, 151);
+}
+.home-content .browse-card .card6 {
+  background-color: rgb(141, 103, 171);
+}
+.home-content .browse-card .card7 {
+  background-color: rgb(119, 119, 119);
+}
+.home-content .browse-card .card8 {
+  background-color: rgb(186, 93, 7);
+}
+.home-content .browse-card .card9 {
+  background-color: rgb(20, 138, 8);
+}
+.home-content .browse-card .card10 {
+  background-color: rgb(216, 64, 0);
+}
+.home-content .browse-card .card11 {
+  background-color: rgb(80, 55, 80);
+}
+.home-content .browse-card .card12 {
+  background-color: rgb(0, 100, 80);
+}
+.home-content .browse-card .card13 {
+  background-color: rgb(233, 20, 41);
+}
+.home-content .browse-card .card14 {
+  background-color: rgb(30, 50, 100);
+}
+.home-content .browse-card .card15 {
+  background-color: rgb(233, 20, 41);
+}
+.home-content .browse-card .card16 {
+  background-color: rgb(83, 122, 161);
+}
+.home-content .browse-card .media-card__img {
+  height: 17rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.home-content .browse-card .media-card__img img {
+  width: 10.4rem;
+  height: 10.4rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.home-content .browse-card .media-card__img span {
+  margin: 2rem 2.1rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 900 !important;
+  width: 50%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 400px) {
+  .home-content {
+    padding: 1.3rem 1.5rem;
+  }
+  .home-content .active {
+    display: none !important;
+  }
+  .home-content .filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.8rem;
+    background-color: rgba(32, 32, 32, 0.5);
+    color: rgb(224, 224, 224);
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .home-content .filter-btn:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(17, 17, 17);
+  }
+  .home-content .filter-btn.active {
+    background-color: rgb(224, 224, 224);
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+  }
+  .home-content .filter-btn {
+    font-size: 1.2rem !important;
+  }
+  .home-section__row .media-card .card__img--wrapper {
+    max-width: 14.1rem !important;
+    height: 15rem;
+  }
+  .home-section__row .media-card .media-card__meta {
+    margin-top: 3rem;
+    justify-content: space-around !important;
+    width: 100% !important;
+    height: 5.7rem;
+    overflow: hidden;
+  }
+  .home-section__row .media-card .media-card__meta h4 {
+    font-size: 1.2rem;
+  }
+  .home-section__row .media-card .media-card__meta p {
+    font-size: 1rem;
+  }
+  .browse__row {
+    gap: 2rem !important;
+    overflow-y: hidden !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .recent__Search--wrapper {
+    display: none;
+  }
+  .browse-card {
+    flex-wrap: wrap;
+  }
+  .browse-card .media-card__img {
+    height: 10rem !important;
+    width: 17rem;
+  }
+  .browse-card img {
+    bottom: -3rem !important;
+  }
+  .browse-card span {
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    width: 60% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

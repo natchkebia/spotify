@@ -1,6 +1,7 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
+// main page main content
 .home-content {
   max-width: 149.1rem;
   width: 100%;
@@ -18,6 +19,27 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    // home__filters--wrapper
+
+    .home__filters--wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .home__section--filters {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .filter-btn {
+        @include m.filter-button;
+      }
+    }
+
+    //home__filters--wrapper
+
+    // home-section__head
 
     .home-section__head {
       display: flex;
@@ -37,16 +59,20 @@
         cursor: pointer;
       }
     }
+    // home-section__head
   }
+
+  // home-section__row
 
   .home-section__row {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     gap: 1.1rem;
     margin: 0 auto;
     margin-top: 1.5rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 
     .media-card {
       display: flex;
@@ -57,12 +83,12 @@
         transform 0.2s ease,
         opacity 0.2s ease;
 
-      .media-card__meta {
+      .media-card__meta,
+      .media-card__img {
         display: flex;
         flex-direction: column;
         gap: 0.8rem;
-        max-width: 17rem;
-        width: 100%;
+        width: 17rem;
 
         h4,
         span {
@@ -152,6 +178,10 @@
     }
   }
 
+  // home-section__row
+
+  // searches__wrapper
+
   .searches__wrapper {
     display: flex;
     justify-content: flex-start;
@@ -176,6 +206,7 @@
           justify-content: center;
           position: absolute;
           right: 0;
+          cursor: pointer;
 
           img {
             width: 1.7rem;
@@ -204,6 +235,10 @@
       }
     }
   }
+  // searches__wrapper
+
+  //browse-section
+
   .Browse-all__title {
     font-size: 2rem;
     color: v.$main-title-color;
@@ -219,18 +254,82 @@
     }
   }
 
-  .home__filters--wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .home__section--filters {
-      display: flex;
-      gap: 1rem;
+  .browse-card {
+    .card1 {
+      background-color: rgba(30, 50, 100, 1);
+    }
+    .card2 {
+      background-color: rgba(186, 93, 7, 1);
+    }
+    .card3 {
+      background-color: rgba(30, 50, 100, 1);
+    }
+    .card4 {
+      background-color: rgba(141, 103, 171, 1);
+    }
+    .card5 {
+      background-color: rgba(176, 40, 151, 1);
+    }
+    .card6 {
+      background-color: rgba(141, 103, 171, 1);
+    }
+    .card7 {
+      background-color: rgba(119, 119, 119, 1);
+    }
+    .card8 {
+      background-color: rgba(186, 93, 7, 1);
+    }
+    .card9 {
+      background-color: rgba(20, 138, 8, 1);
+    }
+    .card10 {
+      background-color: rgba(216, 64, 0, 1);
+    }
+    .card11 {
+      background-color: rgba(80, 55, 80, 1);
+    }
+    .card12 {
+      background-color: rgba(0, 100, 80, 1);
+    }
+    .card13 {
+      background-color: rgba(233, 20, 41, 1);
+    }
+    .card14 {
+      background-color: rgba(30, 50, 100, 1);
+    }
+    .card15 {
+      background-color: rgba(233, 20, 41, 1);
+    }
+    .card16 {
+      background-color: rgba(83, 122, 161, 1);
     }
 
-    .filter-btn {
-      @include m.filter-button;
+    .media-card__img {
+      height: 17rem;
+      border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 10.4rem;
+        height: 10.4rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+      }
+      span {
+        margin: 2rem 2.1rem;
+        color: v.$main-browse-card;
+        font-size: 2rem;
+        font-weight: 900 !important;
+        width: 50%;
+        z-index: 2;
+      }
     }
   }
+
+  //browse-section
 }
+
+// main page main content
