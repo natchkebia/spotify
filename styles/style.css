@@ -422,7 +422,7 @@ body {
   .home-content {
     padding: 1.3rem 1.5rem;
   }
-  .home-content .active {
+  .home-content .disappeared {
     display: none !important;
   }
   .home-content .filter-btn {
