@@ -200,4 +200,10 @@ body {
   justify-content: flex-start;
 }
 
+@media (max-width: 390px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
