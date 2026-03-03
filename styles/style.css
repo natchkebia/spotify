@@ -89,6 +89,9 @@ body {
 }
 
 @media (min-width: 1771px) {
+  .mobile-navigation {
+    display: none;
+  }
   .header {
     height: 5.4rem;
     display: flex;
