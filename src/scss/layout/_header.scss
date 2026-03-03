@@ -46,3 +46,33 @@
     }
   }
 }
+
+@media (max-width: 390px) {
+  .navigation {
+    display: none;
+  }
+  .mobile-navigation {
+    height: 9.5rem;
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 1.6rem 1.6rem;
+    background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.85) 0%,
+      #111111 42.62%
+    );
+    color: var(--text-color);
+  }
+  .mobile-nav-links {
+    display: flex;
+    gap: 3.1rem;
+    justify-content: space-between;
+    align-items: center;
+    .nav-item {
+      @include mixins.flex-column();
+      text-align: center;
+    }
+  }
+}
