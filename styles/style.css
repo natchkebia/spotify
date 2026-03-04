@@ -230,7 +230,7 @@ body {
     height: 5.4rem;
     background-color: var(--main-bg);
     color: var(--text-color);
-    padding: 0.6rem 1rem 1rem 1.5rem;
+    padding: 0.6rem 1rem 1rem 0;
     overflow: visible;
   }
   .header > div {
@@ -257,19 +257,16 @@ body {
   }
   .navigation .nav-links .nav-item:first-child {
     width: 26.2rem;
-  }
-  .navigation .nav-links .nav-item:nth-child(2) {
     background-color: var(--header-nav-clikced-bg);
     border-radius: 1rem;
     width: 19.5rem;
-    padding-left: 1.5rem;
     color: var(--text-clicked-color);
+  }
+  .navigation .nav-links .nav-item:nth-child(2) {
+    width: 19.5rem;
   }
   .navigation .nav-links .nav-item:nth-child(3) {
     width: 21rem;
-  }
-  .navigation .nav-links .nav-item:nth-child(4) {
-    width: 35rem;
   }
   .navigation .user-menu {
     display: flex;
