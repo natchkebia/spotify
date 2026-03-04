@@ -186,14 +186,16 @@ body {
   text-align: center;
 }
 
-#search_input {
+#search_input,
+#search_input_mobile {
   background-color: var(--main-bg);
   border: none;
   color: var(--text-color);
   height: 100%;
 }
 
-#search_input:focus-visible {
+#search_input:focus-visible,
+#search_input_mobile:focus-visible {
   outline: none;
 }
 
