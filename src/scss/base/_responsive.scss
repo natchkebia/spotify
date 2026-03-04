@@ -1,5 +1,7 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins";
+
 
 @media screen and (max-width: 400px) {
   .home-content {
@@ -118,8 +120,7 @@
 
 @media (max-width: 1061px) {
   .home-content {
-    height: auto !important;
-    border: none !important;
+    border: none;
   }
 
   .layout__footer {
@@ -183,7 +184,10 @@
   }
 
   .layout__main {
-    padding-bottom: calc(var(--mobile-nav-h));
+    padding-bottom: calc(
+      var(--mobile-nav-h) + var(--footer-h) + env(safe-area-inset-bottom, 0px) +
+        1rem
+    );
   }
 }
 
@@ -191,4 +195,121 @@
   .action__wrapper {
     display: none !important;
   }
+}
+
+@media (max-width: 1060px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "main"
+      "footer";
+    min-height: 100vh;
+  }
+
+  .layout__sidebar {
+    display: none;
+  }
+
+  .layout__header {
+    display: block;
+  }
+
+  .header {
+    height: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .layout__main {
+    padding-bottom: 10.5rem;
+  }
+}
+@media (min-width: 1061px) {
+  .header {
+    height: 5.4rem;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    padding: 0.6rem 1rem 1rem 0;
+    overflow: visible;
+  }
+
+  .header > div {
+    width: 100%;
+  }
+
+  .navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .nav-item {
+        .nav-link {
+          @include mixins.flex-row();
+          gap: 1rem;
+          font-size: var(--normal-text-size);
+          font-weight: var(--regular-weight);
+        }
+      }
+
+      .nav-item:first-child {
+        width: 26.2rem;
+        background-color: var(--header-nav-clikced-bg);
+        border-radius: 1rem;
+        width: 19.5rem;
+        color: var(--text-clicked-color);
+      }
+
+      .nav-item:nth-child(2) {
+        width: 19.5rem;
+      }
+
+      .nav-item:nth-child(3) {
+        width: 21rem;
+      }
+    }
+
+    .user-menu {
+      display: flex;
+      gap: 1.3rem;
+      align-items: center;
+    }
+  }
+
+  .mobile-navigation {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+
 }
