@@ -15,7 +15,7 @@ body {
 
 .layout {
   display: grid;
-  grid-template-columns: 25.9rem 1fr;
+  grid-template-columns: 26.7rem 1fr;
   grid-template-rows: 5.4rem 1fr auto;
 
   grid-template-areas:
@@ -25,7 +25,6 @@ body {
 
   column-gap: 0;
   row-gap: 0;
-  min-height: 95.7rem;
 }
 
 /* grid items */
