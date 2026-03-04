@@ -46,16 +46,15 @@
   }
 }
 
-.search {
+#search_input {
   background-color: var(--main-bg);
   border: none;
   color: var(--text-color);
-  
   height: 100%;
 }
 
-.search:focus-visible{
-    outline: none;
+#search_input:focus-visible {
+  outline: none;
 }
 
 .sidebar {
