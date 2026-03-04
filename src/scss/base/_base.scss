@@ -10,4 +10,34 @@ html {
 
 body {
   font-family: "Satoshi", sans-serif;
+  background-color: rgba(6, 6, 6);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 26.7rem 1fr;
+  grid-template-rows: 5.4rem 1fr auto;
+
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+
+  column-gap: 0;
+  row-gap: 0;
+  margin-top: 0.3rem;
+}
+
+/* grid items */
+.layout__sidebar {
+  grid-area: sidebar;
+}
+.layout__header {
+  grid-area: header;
+}
+.layout__main {
+  grid-area: main;
+}
+.layout__footer {
+  grid-area: footer;
 }
