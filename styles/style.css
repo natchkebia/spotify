@@ -186,6 +186,17 @@ body {
   text-align: center;
 }
 
+.search {
+  background-color: var(--main-bg);
+  border: none;
+  color: var(--text-color);
+  height: 100%;
+}
+
+.search:focus-visible {
+  outline: none;
+}
+
 .sidebar {
   height: 103.1rem !important;
   overflow: auto;
