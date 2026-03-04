@@ -14,7 +14,7 @@
             <nav class="navigation">
               <!-- Left Navigation -->
               <ul class="nav-links">
-                <li class="nav-item">
+                <li class="nav-item pinned_home-btn">
                   <a href="./index.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/home.png"
@@ -103,7 +103,7 @@
             <nav class="mobile-navigation">
               <ul class="mobile-nav-links">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./index.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/home.png"
                       alt="Home icon"
@@ -160,7 +160,7 @@
       <div class="layout__sidebar">
         <section class="hero">
           <!-- side bar -->
-          <aside class="sidebar">
+          <aside class="sidebar pinned__sidebar">
             <nav class="sidebar-nav">
               <ul class="sidebar-list">
                 <li class="sidebar-item">
@@ -174,7 +174,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item has-arrow">
-                  <a href="./pinned.html" class="sidebar-link">
+                  <a href="#" class="sidebar-link">
                     <div class="link-name">
                       <img
                         src="./assets/images/aside icons/pin.png"
@@ -294,19 +294,55 @@
         <!-- main page main content -->
         <section class="home-content">
           <div class="home-section">
-            <div class="home__filters--wrapper">
-              <div class="home__section--filters">
-                <button class="filter-btn active disappeared">
-                  <a href="#">All</a>
+            <div class="penned__filters--wrapper">
+              <div>
+                <div class="penned__icon-wraper">
+                  <button>
+                    <img
+                      src="./assets/images/pinned-page/List.svg"
+                      alt="list"
+                    />
+                  </button>
+                  <button class="active_button">
+                    <img
+                      src="./assets/images/pinned-page/GridViewIcon.svg"
+                      alt="GridViewIcon"
+                    />
+                  </button>
+                </div>
+                <div class="penned__icon-wraper">
+                  <button>
+                    <img
+                      src="./assets/images/pinned-page/SortIcon.svg"
+                      alt="SortIcon"
+                    />
+                  </button>
+                  <span>Recent</span>
+                </div>
+                <div class="penned__icon-wraper">
+                  <button>
+                    <img
+                      src="./assets/images/pinned-page/FilterIcon.svg"
+                      alt="Filter-icon"
+                    />
+                  </button>
+                  <span>Group</span>
+                </div>
+                <button class="search-btn">
+                  <img
+                    src="./assets/images/pinned-page/SearchIcon.svg"
+                    alt="search"
+                  />
                 </button>
-                <button class="filter-btn"><a href="#">Music</a></button>
-                <button class="filter-btn"><a href="#">Podcasts</a></button>
-                <button class="filter-btn"><a href="#">Audiobooks</a></button>
               </div>
-              <img
-                src="./assets/images/main-content/icons/iconsBig.svg"
-                alt="Filter-icon"
-              />
+              <div>
+                <button class="pluse-btn">
+                  <img
+                    src="./assets/images/pinned-page/pluse.svg"
+                    alt="pluse"
+                  />
+                </button>
+              </div>
             </div>
 
             <!-- recently-played -->
@@ -378,22 +414,172 @@
 
             <!-- made for you section -->
             <div>
-              <div class="home-section__head">
-                <h2>Made For You</h2>
-                <div class="icon__wrapper">
-                  <img
-                    src="./assets/images/main-content/icons/arrow-left.svg"
-                    alt="arrow-left"
-                  />
-                  <img
-                    src="./assets/images/main-content/icons/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                  <img
-                    src="./assets/images/main-content/icons/dots.svg"
-                    alt="3 dots"
-                  />
-                </div>
+              <div class="home-section__row peend-sectio-row">
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame1.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta">
+                    <div>
+                      <h4>Liked songs</h4>
+                      <span class="Number-of-songs14">8</span>
+                    </div>
+                    <p>Numb, Crawling, In the End, and more.</p>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame2.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta peend-card__meta">
+                    <div>
+                      <h4>David Bowie</h4>
+                    </div>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
+
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame3.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta peend-card__meta">
+                    <div>
+                      <h4>Daft Punk</h4>
+                    </div>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame4.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta">
+                    <div>
+                      <h4>Chill Stuff</h4>
+                      <span class="Number-of-songs5">152</span>
+                    </div>
+                    <p>Simon and Garfunkel, Daft Punk, and more</p>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame4.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta">
+                    <div>
+                      <h4>The Jux Box</h4>
+                      <span class="Number-of-songs5">50</span>
+                    </div>
+                    <p>Simon and Garfunkel, Daft Punk, and more</p>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame4.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta">
+                    <div>
+                      <h4>Vibe</h4>
+                      <span class="Number-of-songs5">30</span>
+                    </div>
+                    <p>Numb, Crawling, In the End, and more</p>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame4.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta">
+                    <div>
+                      <h4>Selected Linkin Park</h4>
+                      <span class="Number-of-songs5">8</span>
+                    </div>
+                    <p>Numb, Crawling, In the End, and more</p>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
+                <article class="media-card peened-card">
+                  <div class="media-card__img card__img--wrapper">
+                    <img
+                      src="./assets/images/pinned-page/Frame5.png"
+                      alt="music card"
+                    />
+                  </div>
+                  <div class="media-card__meta">
+                    <div>
+                      <h4>Fav bands</h4>
+                      <span class="Number-of-songs5">6</span>
+                    </div>
+                    <p>Numb, Crawling, In the End, and more</p>
+                  </div>
+                  <button class="peen-button">
+                    <img
+                      src="./assets/images/pinned-page/peen.svg"
+                      alt="peen"
+                    />
+                  </button>
+                </article>
               </div>
 
               <div class="home-section__row">
@@ -532,24 +718,6 @@
 
             <!-- Your top mixes section -->
             <div>
-              <div class="home-section__head">
-                <h2>Your top mixes</h2>
-                <div class="icon__wrapper">
-                  <img
-                    src="./assets/images/main-content/icons/arrow-left.svg"
-                    alt="arrow-left"
-                  />
-                  <img
-                    src="./assets/images/main-content/icons/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                  <img
-                    src="./assets/images/main-content/icons/dots.svg"
-                    alt="3 dots"
-                  />
-                </div>
-              </div>
-
               <div class="home-section__row">
                 <article class="media-card">
                   <div class="media-card__img card__img--wrapper">
@@ -684,16 +852,6 @@
 
             <!-- Recent searches -->
             <div class="recent__Search--wrapper">
-              <div class="home-section__head">
-                <h2>Recent searches</h2>
-                <div class="icon__wrapper">
-                  <img
-                    src="./assets/images/main-content/icons/dots.svg"
-                    alt="3 dots"
-                  />
-                </div>
-              </div>
-
               <div class="home-section__row searches__wrapper">
                 <div class="searches__sectio">
                   <div>
@@ -745,21 +903,6 @@
 
             <!-- Browse all section -->
             <div>
-              <h2 class="Browse-all__title">Browse all</h2>
-              <div class="home-section__head Browse__section--head">
-                <h2>Discover</h2>
-                <div class="icon__wrapper">
-                  <img
-                    src="./assets/images/main-content/icons/arrow-left.svg"
-                    alt="arrow-left"
-                  />
-                  <img
-                    src="./assets/images/main-content/icons/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                </div>
-              </div>
-
               <div class="home-section__row browse__row">
                 <article class="media-card browse-card">
                   <div class="media-card__img card1 tviniSeChama">
@@ -844,20 +987,6 @@
             </div>
 
             <div>
-              <div class="home-section__head Browse__section--head">
-                <h2>Genres</h2>
-                <div class="icon__wrapper">
-                  <img
-                    src="./assets/images/main-content/icons/arrow-left.svg"
-                    alt="arrow-left"
-                  />
-                  <img
-                    src="./assets/images/main-content/icons/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                </div>
-              </div>
-
               <div class="home-section__row browse__row">
                 <article class="media-card browse-card">
                   <div class="media-card__img card9">

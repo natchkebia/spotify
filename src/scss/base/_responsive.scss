@@ -102,9 +102,17 @@
   }
 }
 
-@media (max-width: 1141px) {
-  .action__wrapper {
+@media (max-width: 485px) {
+  .search-btn,
+  .pluse-btn {
     display: none !important;
+  }
+
+  .penned__filters--wrapper {
+    > div {
+      display: flex;
+      gap: 2rem;
+    }
   }
 }
 
@@ -176,5 +184,11 @@
 
   .layout__main {
     padding-bottom: calc(var(--mobile-nav-h));
+  }
+}
+
+@media (max-width: 1141px) {
+  .action__wrapper {
+    display: none !important;
   }
 }
