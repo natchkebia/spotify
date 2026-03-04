@@ -132,6 +132,18 @@ body {
   grid-area: footer;
 }
 
+@keyframes bodyFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  animation: bodyFade 0.1s linear forwards;
+}
+
 .header {
   height: 5.4rem;
   background-color: var(--main-bg);
