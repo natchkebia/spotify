@@ -14,7 +14,7 @@
             <nav class="navigation">
               <!-- Left Navigation -->
               <ul class="nav-links">
-                <li class="nav-item">
+                <li class="nav-item pinned_home-btn">
                   <a href="./index.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/home.png"
@@ -36,19 +36,20 @@
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a href="./search.html" class="nav-link">
+                <li class="nav-item hio">
+                  <a href="#" class="nav-link search_page--input">
                     <img
-                      src="./assets/images/header icons/search.png"
+                      src="./assets/images/search-page/search-icon.svg"
                       alt="Search icon"
-                      class="nav-icon"
+                      class="nav-icon search-main-icon"
                     />
                     <input
                       type="text"
                       name="search"
                       id="search_input"
                       placeholder="Search"
-                      class="search"
+                      text="search..."
+                      class="search search_page-search-input"
                     />
                   </a>
                 </li>
@@ -109,9 +110,9 @@
             <nav class="mobile-navigation">
               <ul class="mobile-nav-links">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./index.html" class="nav-link">
                     <img
-                      src="./assets/images/header icons/home.png"
+                      src="./assets/images/search-page/home.svg"
                       alt="Home icon"
                       class="nav-icon"
                     />
@@ -131,7 +132,7 @@
                 <li class="nav-item">
                   <a href="./search.html" class="nav-link">
                     <img
-                      src="./assets/images/header icons/search.png"
+                      src="./assets/images/search-page/mobile-search.svg"
                       alt="Search icon"
                       class="nav-icon"
                     />
@@ -300,8 +301,8 @@
         <!-- main page main content -->
         <section class="home-content">
           <div class="home-section">
-            <div class="home__filters--wrapper">
-              <div class="home__section--filters">
+            <div class="home__filters--wrapper search__filter--wrapper">
+              <div class="home__section--filters searchPage__section--filter">
                 <button class="filter-btn active disappeared">
                   <a href="#">All</a>
                 </button>
@@ -313,6 +314,28 @@
                 src="./assets/images/main-content/icons/iconsBig.svg"
                 alt="Filter-icon"
               />
+            </div>
+
+            <div class="search__filter--wrapper--mobile">
+              <div class="search__page-mobile-input">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="What do you want to play?"
+                  class="search"
+                />
+                <img
+                  src="./assets/images/header icons/search.png"
+                  alt="Search icon"
+                  class="nav-icon"
+                />
+              </div>
+              <button>
+                <img
+                  src="./assets/images/search-page/camera.svg"
+                  alt="camera"
+                />
+              </button>
             </div>
 
             <!-- recently-played -->

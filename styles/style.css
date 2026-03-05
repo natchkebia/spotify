@@ -861,6 +861,56 @@ body {
   align-items: center;
 }
 
+.search_page--input {
+  background-color: rgb(17, 17, 17);
+  width: 35rem;
+  border-radius: 1rem;
+  height: 5.2rem;
+  padding: 1.6rem 2.4rem;
+}
+.search_page--input .search-main-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.search_page--input .search_page-search-input {
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.search__filter--wrapper--mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+}
+.search__filter--wrapper--mobile .search__page-mobile-input {
+  background-color: rgba(32, 32, 32, 0.5);
+  display: flex;
+  width: 30.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.6rem 0.8rem 0.8rem;
+  border-radius: 1rem;
+  color: rgb(137, 137, 137);
+}
+.search__filter--wrapper--mobile .search__page-mobile-input input {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.search__filter--wrapper--mobile .search__page-mobile-input img {
+  width: 2rem;
+  height: 2rem;
+}
+.search__filter--wrapper--mobile button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 @media screen and (max-width: 400px) {
   .home-content {
     padding: 1.3rem 1.5rem;
@@ -1032,16 +1082,6 @@ body {
   .layout__footer .mobile__actions {
     display: flex !important;
   }
-  .layout__main {
-    padding-bottom: calc(var(--mobile-nav-h) + var(--footer-h) + env(safe-area-inset-bottom, 0px) + 1rem);
-  }
-}
-@media (max-width: 1141px) {
-  .action__wrapper {
-    display: none !important;
-  }
-}
-@media (max-width: 1060px) {
   .layout {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
@@ -1077,6 +1117,9 @@ body {
   }
   .layout__main {
     padding-bottom: 10.5rem;
+  }
+  .search__filter--wrapper {
+    display: none !important;
   }
 }
 @media (min-width: 1061px) {
@@ -1132,6 +1175,14 @@ body {
   }
   .sidebar {
     display: block;
+  }
+  .search__filter--wrapper--mobile {
+    display: none;
+  }
+}
+@media (max-width: 1141px) {
+  .action__wrapper {
+    display: none !important;
   }
 }
 

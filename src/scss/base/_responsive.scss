@@ -2,7 +2,6 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins";
 
-
 @media screen and (max-width: 400px) {
   .home-content {
     padding: 1.3rem 1.5rem;
@@ -183,21 +182,6 @@
     }
   }
 
-  .layout__main {
-    padding-bottom: calc(
-      var(--mobile-nav-h) + var(--footer-h) + env(safe-area-inset-bottom, 0px) +
-        1rem
-    );
-  }
-}
-
-@media (max-width: 1141px) {
-  .action__wrapper {
-    display: none !important;
-  }
-}
-
-@media (max-width: 1060px) {
   .layout {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
@@ -245,7 +229,12 @@
   .layout__main {
     padding-bottom: 10.5rem;
   }
+
+  .search__filter--wrapper {
+    display: none !important;
+  }
 }
+
 @media (min-width: 1061px) {
   .header {
     height: 5.4rem;
@@ -310,6 +299,17 @@
   .sidebar {
     display: block;
   }
+  //  .search__filter--wrapper {
+  //   display: flex !important;
+  // }
+  .search__filter--wrapper--mobile {
+    display: none;
+  }
+}
 
 
+@media (max-width: 1141px) {
+  .action__wrapper {
+    display: none !important;
+  }
 }
