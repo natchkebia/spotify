@@ -77,7 +77,14 @@
                 <li>
                   <a href="#" aria-label="Friends" class="friend-panel-open">
                     <img
+                      class="friend-panel-closed-img"
                       src="./assets/images/header icons/friend.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="friend-panel-opened-img"
+                      src="./assets/images/header icons/friend-opened.png"
                       alt=""
                       aria-hidden="true"
                     />
@@ -1217,11 +1224,19 @@
         .querySelector(".exit-friend-panel")
         .addEventListener("click", () => {
           document.querySelector(".friend-activity").classList.toggle("close");
+          document
+            .querySelector(".friend-panel-open")
+            .classList.toggle("active");
         });
       document
         .querySelector(".friend-panel-open")
-        .addEventListener("click", () => {
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+
           document.querySelector(".friend-activity").classList.toggle("close");
+          document
+            .querySelector(".friend-panel-open")
+            .classList.toggle("active");
         });
     </script>
   </body>
