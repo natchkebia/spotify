@@ -18,6 +18,9 @@
   cursor: pointer;
 }
 .active-control-panel {
+  h2 {
+    color: var(--text-clicked-color);
+  }
   @include mixins.flex-between();
   width: 100%;
   .add-exit {
