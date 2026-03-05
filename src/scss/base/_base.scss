@@ -39,6 +39,8 @@ body {
 }
 .layout__main {
   grid-area: main;
+  display: flex;
+  gap: 1rem;
 }
 .layout__footer {
   grid-area: footer;

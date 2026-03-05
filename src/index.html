@@ -75,7 +75,7 @@
                 </li>
 
                 <li>
-                  <a href="#" aria-label="Friends">
+                  <a href="#" aria-label="Friends" class="friend-panel-open">
                     <img
                       src="./assets/images/header icons/friend.png"
                       alt=""
@@ -949,6 +949,134 @@
             <!-- Browse all section -->
           </div>
         </section>
+        <!-- friend avtivity  -->
+        <div class="friend-activity close">
+          <div class="active-control-panel">
+            <h2>Friends Activity</h2>
+
+            <div class="add-exit">
+              <img
+                class="friend-add"
+                src="./assets/images/friedn-activity-icons/add-friend.png"
+                alt="add friend"
+              />
+              <img
+                class="exit-friend-panel"
+                src="./assets/images/friedn-activity-icons/exit.png"
+                alt="close panel"
+              />
+            </div>
+          </div>
+
+          <div class="friend-active-log">
+            <!-- friend list cards -->
+            <!-- friend 1 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend1.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">FriendlyMusicListener</p>
+
+                <div class="active-log">
+                  <img
+                    src="./assets/images/friedn-activity-icons/active.png"
+                    alt="active"
+                  />
+
+                  <div class="log">
+                    <p class="song-name">Goosebumps</p>
+                    <span class="circle-dot"></span>
+                    <p>Travis Scott</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 1 -->
+            <!-- friend 2 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend3.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">AverageMusicEnjoyer</p>
+
+                <div class="active-log">
+                  <img
+                    src="./assets/images/friedn-activity-icons/active.png"
+                    alt="active"
+                  />
+
+                  <div class="log">
+                    <p class="song-name">Get Lucky</p>
+                    <span class="circle-dot"></span>
+                    <p>Daft Punk</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 2 -->
+            <!-- friend 3 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend1.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">MusicEnthusiast</p>
+
+                <div class="active-log">
+                  <p class="active-ago">1h</p>
+
+                  <div class="log">
+                    <p class="song-name">would he</p>
+                    <span class="circle-dot"></span>
+                    <p>Daft Punk</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 3 -->
+            <!-- friend 4 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend1.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">IListenToMusic56</p>
+
+                <div class="active-log">
+                  <p class="active-ago">6h</p>
+
+                  <div class="log">
+                    <p class="song-name">Rockstar</p>
+                    <span class="circle-dot"></span>
+                    <p>Post Malone</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 4 -->
+          </div>
+        </div>
+
+        <!-- friend list cards end -->
+        <!-- friend avtivity  end-->
         <!-- main page main content -->
       </div>
       <!-- footer section -->
@@ -1084,5 +1212,17 @@
       </div>
       <!-- footer section -->
     </div>
+    <script>
+      document
+        .querySelector(".exit-friend-panel")
+        .addEventListener("click", () => {
+          document.querySelector(".friend-activity").classList.toggle("close");
+        });
+      document
+        .querySelector(".friend-panel-open")
+        .addEventListener("click", () => {
+          document.querySelector(".friend-activity").classList.toggle("close");
+        });
+    </script>
   </body>
 </html>

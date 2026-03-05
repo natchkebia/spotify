@@ -132,6 +132,8 @@ body {
 
 .layout__main {
   grid-area: main;
+  display: flex;
+  gap: 1rem;
 }
 
 .layout__footer {
@@ -252,6 +254,100 @@ body {
     display: none;
   }
 }
+.friend-activity {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid rgb(32, 32, 32);
+  color: var(--text-color);
+  border-radius: 1rem;
+  width: 35.8rem;
+  margin-right: 1rem;
+  height: 86vh;
+  padding: 1.5rem;
+}
+.friend-activity.close {
+  display: none;
+}
+
+.exit-friend-panel {
+  cursor: pointer;
+}
+
+.active-control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.active-control-panel .add-exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.friend-active-log {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.friend-list-person {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.friend-list-person .friend-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.friend-list-person .friend-info .active-log {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.friend-list-person .friend-info .active-log img {
+  margin-left: -0.6rem;
+  width: 3rem;
+  height: 3rem;
+}
+.friend-list-person .friend-info .active-log .active-ago {
+  width: 2rem;
+}
+.friend-list-person .friend-info .song-name {
+  color: var(--text-clicked-color);
+}
+.friend-list-person .friend-info .friend-name {
+  color: var(--text-clicked-color);
+}
+.friend-list-person .friend-info .active-log {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+}
+.friend-list-person .friend-info .active-log .log {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.circle-dot {
+  width: 3px;
+  height: 3px;
+  background-color: #898989;
+  border-radius: 50%;
+}
+
 .layout__footer {
   position: fixed;
   bottom: 2rem;
