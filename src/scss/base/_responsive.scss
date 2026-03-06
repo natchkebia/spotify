@@ -119,6 +119,13 @@
   .liked__filter--wrapper {
     justify-content: center;
   }
+  .mobile__cover {
+    display: flex !important;
+  }
+
+  .delete-button {
+    display: none;
+  }
 }
 
 @media (max-width: 1060px) {
@@ -245,6 +252,20 @@
   .songs-table {
     display: none;
   }
+  .table__section--header {
+    display: none;
+  }
+
+  .table__section--header--mobile,
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .mobile__cover {
+    display: none;
+  }
 }
 
 @media (min-width: 1061px) {
@@ -311,12 +332,16 @@
   .sidebar {
     display: block;
   }
-  
+
   .search__filter--wrapper--mobile {
     display: none;
   }
 
-  .liked__song--actions, .liked__song--mobile-content{
+  .liked__song--actions,
+  .liked__song--mobile-content {
+    display: none;
+  }
+  .playlist__mobile--wrapper {
     display: none;
   }
 }
@@ -324,5 +349,18 @@
 @media (max-width: 1141px) {
   .action__wrapper {
     display: none !important;
+  }
+}
+
+@media (max-width: 1230px) {
+  .cover__section {
+    display: none !important;
+  }
+
+  .plalist__table-section {
+    width: 100%;
+  }
+  .playlist-table {
+    width: 100%;
   }
 }

@@ -1129,6 +1129,171 @@ body {
   background-color: transparent;
 }
 
+.playlist-link {
+  background-color: rgb(32, 32, 32);
+  border-radius: 0.5rem;
+}
+
+.playlist__section--wrapper {
+  background: linear-gradient(180deg, rgba(59, 79, 182, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
+}
+
+.playlist__section {
+  display: flex;
+  gap: 4.6rem;
+  justify-content: space-between;
+}
+.playlist__section .cover__section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 32rem;
+  margin-right: 3rem;
+}
+.playlist__section .genre {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.playlist__section .genre button {
+  padding: 1rem 2rem;
+  border: 2px solid rgba(137, 137, 137, 0.25);
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border-radius: 4.4rem;
+}
+.playlist__section .other-singers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.playlist__section .other-singers > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: rgb(137, 137, 137);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.plalist__table-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 80%;
+}
+
+.table__section--header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.table__section--header h2 {
+  color: rgb(224, 224, 224);
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.table__section--header .playlist-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+}
+.table__section--header .playlist-meta span {
+  color: rgb(224, 224, 224);
+  font-size: 500;
+}
+.table__section--header .playlist-meta > span {
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: rgb(137, 137, 137);
+  border-radius: 50%;
+}
+
+.playlist-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.playlist-action > div {
+  display: flex;
+  gap: 1.4rem;
+}
+.playlist-action button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 4rem;
+  height: 4rem;
+}
+.playlist-action .playlist-active {
+  background-color: rgb(30, 215, 96);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist--search-input {
+  background-color: rgba(224, 224, 224, 0.04) !important;
+}
+
+.playlist__mobile--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+.playlist__mobile--wrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem !important;
+}
+.playlist__mobile--wrapper .playlist__filter--mobile {
+  display: flex;
+  flex-direction: row;
+}
+
+.mobile__cover {
+  display: flex;
+  justify-content: center;
+}
+.mobile__cover img {
+  width: 21.1rem;
+  height: 21.1rem;
+}
+
+.playlist-table-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-table-mobile > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-songs-list > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-songs-list h4,
+.mobile-songs-list p {
+  width: 17rem;
+}
+
+.table__section--header--mobile {
+  margin-left: 1.6rem;
+}
+
 @media screen and (max-width: 400px) {
   .home-content {
     padding: 1.3rem 1.5rem;
@@ -1247,6 +1412,12 @@ body {
   .liked__filter--wrapper {
     justify-content: center;
   }
+  .mobile__cover {
+    display: flex !important;
+  }
+  .delete-button {
+    display: none;
+  }
 }
 @media (max-width: 1060px) {
   .home-content {
@@ -1348,6 +1519,19 @@ body {
   .songs-table {
     display: none;
   }
+  .table__section--header {
+    display: none;
+  }
+  .table__section--header--mobile,
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .mobile__cover {
+    display: none;
+  }
 }
 @media (min-width: 1061px) {
   .header {
@@ -1406,13 +1590,28 @@ body {
   .search__filter--wrapper--mobile {
     display: none;
   }
-  .liked__song--actions, .liked__song--mobile-content {
+  .liked__song--actions,
+  .liked__song--mobile-content {
+    display: none;
+  }
+  .playlist__mobile--wrapper {
     display: none;
   }
 }
 @media (max-width: 1141px) {
   .action__wrapper {
     display: none !important;
+  }
+}
+@media (max-width: 1230px) {
+  .cover__section {
+    display: none !important;
+  }
+  .plalist__table-section {
+    width: 100%;
+  }
+  .playlist-table {
+    width: 100%;
   }
 }
 
