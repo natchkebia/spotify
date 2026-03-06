@@ -1002,7 +1002,7 @@ body {
 .search__filter--wrapper--mobile .search__page-mobile-input {
   background-color: rgba(32, 32, 32, 0.5);
   display: flex;
-  width: 30.5rem;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 1.6rem 0.8rem 0.8rem;
