@@ -117,7 +117,7 @@
   }
 }
 
-@media (max-width: 1061px) {
+@media (max-width: 1060px) {
   .home-content {
     border: none;
   }
@@ -232,6 +232,10 @@
 
   .search__filter--wrapper {
     display: none !important;
+  }
+
+  .friend-activity {
+    display: none;
   }
 }
 

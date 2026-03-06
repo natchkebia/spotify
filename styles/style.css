@@ -1138,7 +1138,7 @@ body {
     gap: 2rem;
   }
 }
-@media (max-width: 1061px) {
+@media (max-width: 1060px) {
   .home-content {
     border: none;
   }
@@ -1231,6 +1231,9 @@ body {
   }
   .search__filter--wrapper {
     display: none !important;
+  }
+  .friend-activity {
+    display: none;
   }
 }
 @media (min-width: 1061px) {
