@@ -115,6 +115,10 @@
       gap: 2rem;
     }
   }
+
+  .liked__filter--wrapper {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1060px) {
@@ -237,6 +241,10 @@
   .friend-activity {
     display: none;
   }
+
+  .songs-table {
+    display: none;
+  }
 }
 
 @media (min-width: 1061px) {
@@ -303,14 +311,15 @@
   .sidebar {
     display: block;
   }
-  //  .search__filter--wrapper {
-  //   display: flex !important;
-  // }
+  
   .search__filter--wrapper--mobile {
     display: none;
   }
-}
 
+  .liked__song--actions, .liked__song--mobile-content{
+    display: none;
+  }
+}
 
 @media (max-width: 1141px) {
   .action__wrapper {
