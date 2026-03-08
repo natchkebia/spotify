@@ -1,8 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
-@use "../base/responsive";
 @use "../abstracts/variables" as v;
-@use "./get-lucky-respnsive";
 
 .circle-dot {
   width: 3px;
@@ -76,10 +74,9 @@
     }
   }
 }
-
-lyrics .home-content {
+.home-content {
   position: relative;
-  padding: 0 !important;
+
   overflow: hidden;
   background: linear-gradient(
     180deg,
@@ -91,7 +88,6 @@ lyrics .home-content {
 }
 
 .home-content {
-  padding: 0 !important;
   background: linear-gradient(
     180deg,
     rgba(137, 137, 137, 0.2) rgba(137, 137, 137, 0.2) rgba(137, 137, 137, 0.2)
@@ -142,7 +138,3 @@ lyrics .home-content {
   font-size: 2.8rem;
   font-weight: 700;
 }
-
-// mobile-nav
-// mobile content
-
