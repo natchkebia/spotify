@@ -46,6 +46,10 @@
         }
       }
     }
+    // get lucky page
+    .home-section{
+      display: none !important;
+    }
   }
 
   .home-section__row {
@@ -126,6 +130,10 @@
   .delete-button {
     display: none;
   }
+  // get lucky page
+    .home-section{
+      display: none !important;
+    }
 }
 
 @media (max-width: 1060px) {
@@ -266,6 +274,7 @@
   .mobile__cover {
     display: none;
   }
+  // get lucky page
 }
 
 @media (min-width: 1061px) {
@@ -344,6 +353,7 @@
   .playlist__mobile--wrapper {
     display: none;
   }
+  // get lucky page
 }
 
 @media (max-width: 1141px) {
@@ -363,4 +373,6 @@
   .playlist-table {
     width: 100%;
   }
+
+  // get lucky page
 }

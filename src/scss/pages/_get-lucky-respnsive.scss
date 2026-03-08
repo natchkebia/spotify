@@ -1,0 +1,574 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/responsive";
+@use "../abstracts/variables" as v;
+.mobile-music-section {
+  display: none;
+}
+
+@media (max-width: 1255px) {
+  .home-content {
+    border: none;
+  }
+
+  .layout__footer {
+    margin-top: 10rem;
+
+    > div {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: calc(var(--mobile-nav-h));
+      width: 98%;
+      margin: 0 auto;
+      z-index: 9999;
+      padding: 1rem 1.4rem;
+      border-radius: 1rem;
+    }
+
+    .Playback__controls--Progress-bar {
+      display: none !important;
+    }
+
+    .Track-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 93vw !important;
+    }
+
+    .Track__info--container {
+      display: flex !important;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 1rem 1rem 0.8rem;
+      min-width: 0;
+
+      img {
+        width: 4.8rem;
+        height: 4.8rem;
+        object-fit: cover;
+        border-radius: 0.4rem;
+        flex-shrink: 0;
+      }
+
+      div {
+        min-width: 0;
+
+        h4,
+        span,
+        p {
+          width: auto;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .mobile__actions {
+      display: flex !important;
+    }
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "main"
+      "footer";
+    min-height: 100vh;
+  }
+
+  .layout__sidebar {
+    display: none;
+  }
+
+  .layout__header {
+    display: block;
+  }
+
+  .header {
+    height: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .layout__main {
+    padding-bottom: 10.5rem;
+  }
+
+  .search__filter--wrapper {
+    display: none !important;
+  }
+
+  .friend-activity {
+    display: none;
+  }
+
+  .songs-table {
+    display: none;
+  }
+  .table__section--header {
+    display: none;
+  }
+
+  .table__section--header--mobile,
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .mobile__cover {
+    display: none;
+  }
+  // get lucky page
+
+  // mobile content
+  .mobile-music-section {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .home-content {
+    border: none;
+  }
+
+  .layout__footer {
+    margin-top: 10rem;
+
+    > div {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: calc(var(--mobile-nav-h));
+      width: 98%;
+      margin: 0 auto;
+      z-index: 9999;
+      padding: 1rem 1.4rem;
+      border-radius: 1rem;
+    }
+
+    .Playback__controls--Progress-bar {
+      display: none !important;
+    }
+
+    .Track-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 93vw !important;
+    }
+
+    .Track__info--container {
+      display: flex !important;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 1rem 1rem 0.8rem;
+      min-width: 0;
+
+      img {
+        width: 4.8rem;
+        height: 4.8rem;
+        object-fit: cover;
+        border-radius: 0.4rem;
+        flex-shrink: 0;
+      }
+
+      div {
+        min-width: 0;
+
+        h4,
+        span,
+        p {
+          width: auto;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .mobile__actions {
+      display: flex !important;
+    }
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "main"
+      "footer";
+    min-height: 100vh;
+  }
+
+  .layout__sidebar {
+    display: none;
+  }
+
+  .layout__header {
+    display: block;
+  }
+
+  .header {
+    height: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .layout__main {
+    padding-bottom: 10.5rem;
+  }
+
+  .search__filter--wrapper {
+    display: none !important;
+  }
+
+  .friend-activity {
+    display: none;
+  }
+
+  .songs-table {
+    display: none;
+  }
+  .table__section--header {
+    display: none;
+  }
+
+  .table__section--header--mobile,
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .playlist-table-mobile {
+    display: flex;
+  }
+  .mobile__cover {
+    display: none;
+  }
+  // get lucky page
+  .song-info-suggestion {
+    flex-direction: column;
+  }
+  .lyrics-control {
+    gap: 5rem !important;
+  }
+  // footer
+
+  // mobile content
+  .mobile-music-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  // mobile content
+  .mobile-music-section {
+    display: block;
+  }
+  .layout__footer {
+    display: none !important;
+  }
+  .home-content {
+    margin-bottom: 0 !important;
+    height: 100vh !important;
+    background: linear-gradient(180deg, #3b414d 0%, #272b33 100%);
+  }
+  .mobile-navigation {
+    display: none;
+  }
+  .layout__main {
+    padding-bottom: 0 !important;
+  }
+
+  .Playback-controls {
+    display: flex;
+    gap: 3.4rem;
+    margin-top: 6rem;
+
+    button {
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    .control-music {
+      @include mixins.flex-row;
+      justify-content: space-between;
+      gap: 2rem;
+
+      width: 100%;
+    }
+    .Playback__controls--Progress-bar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition:
+          transform 0.2s ease,
+          opacity 0.2s ease;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        opacity: 0.85;
+      }
+
+      .play-button {
+        // background-color: rgba(30, 215, 96, 1);
+
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+
+        img {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      .play-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 8px rgba(30, 215, 96, 0.6);
+      }
+
+      .audio-slider-container {
+        @include mixins.flex-column;
+        width: 100%;
+        gap: 0.5rem;
+        .time-line {
+          width: 100%;
+        }
+        .time-show {
+          width: 100%;
+          @include mixins.flex-between;
+        }
+      }
+
+      .time-display {
+        color: v.$main-subTitle-color;
+        font-size: 1.2rem;
+      }
+
+      .custom-range {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 0.2rem;
+        background: rgb(74, 78, 85);
+        border-radius: 0.5rem;
+        outline: none;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:hover {
+          background: rgb(90, 95, 105);
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 0;
+          height: 0;
+          box-shadow: -100vw 0 0 100vw rgb(224, 223, 224);
+        }
+
+        &::-moz-range-thumb {
+          width: 0;
+          height: 0;
+          border: none;
+          box-shadow: -100vw 0 0 100vw rgb(224, 223, 224);
+        }
+
+        &::-moz-range-progress {
+          background-color: rgb(224, 223, 224);
+          height: 4px;
+        }
+      }
+    }
+
+    .Track-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    .Track__info--container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex: 1;
+      min-width: 0;
+
+      img {
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+
+        h4,
+        span,
+        p {
+          font-size: 1.4rem;
+          color: v.$main-title-color;
+          width: 101%;
+        }
+
+        span,
+        p {
+          color: v.$main-subTitle-color;
+        }
+      }
+    }
+
+    .mobile__actions {
+      display: none;
+      align-items: center;
+      gap: 1.2rem;
+      flex-shrink: 0;
+
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  //   mobile music control
+  .control-page {
+    .control-list {
+      @include mixins.flex-between();
+      margin-top: 7rem;
+    }
+  }
+  .mobile-music-section {
+    padding: 6.88rem 2rem 2rem;
+  }
+  .album-control {
+    @include mixins.flex-row;
+    gap: 5rem;
+    padding-bottom: 2rem;
+  }
+  .album-name {
+    @include mixins.flex-between();
+    gap: 0.5rem;
+    p {
+      font-size: 1.2rem;
+      color: v.$main-title-color;
+      font-weight: 400;
+    }
+  }
+  .music-name-favorite {
+    margin-top: 1rem;
+    @include mixins.flex-column-start();
+  }
+  h2 {
+    color: v.$muted-text;
+    font-size: 1.8rem;
+  }
+  .music-name {
+    width: 100%;
+    @include mixins.flex-between;
+
+    .favorite {
+      @include mixins.flex-row;
+    }
+
+    .music-title {
+      width: 26rem; /* რამდენი სივრცე უნდა დაიკავოს */
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+
+      -webkit-mask-image: linear-gradient(to right, black 75%, transparent);
+      mask-image: linear-gradient(to right, black 75%, transparent);
+      h2 {
+        color: v.$main-title-color;
+        font-size: 2em;
+        display: inline-block;
+      }
+    }
+  }
+
+  // play control img
+  .control-music {
+    img {
+      width: 4rem;
+      height: 4rem;
+
+      top: 8.59px;
+      left: 8.59px;
+    }
+  }
+}
