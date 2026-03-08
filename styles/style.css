@@ -1294,6 +1294,172 @@ body {
   margin-left: 1.6rem;
 }
 
+.artis__content {
+  padding: 0;
+}
+
+.artists__section {
+  gap: 0 !important;
+}
+.artists__section .artist__cover-wrapper {
+  position: relative;
+  width: 100%;
+}
+.artists__section .artist__cover-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.artists__section .artist__cover-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 22;
+  background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, rgba(7, 7, 7, 0.8) 99.62%);
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 0 3.7rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  bottom: 3.3rem;
+  z-index: 23;
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--about p,
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--about span {
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgb(224, 224, 224);
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--about span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--action {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--action button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--action .active-btn {
+  background-color: rgb(30, 215, 96);
+  border-radius: 50%;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--action .active-btn img {
+  height: 1.9rem;
+  width: 1.7rem;
+  margin-left: 0.3rem;
+}
+.artists__section .artist__cover-wrapper .cover__wrapper--header .cover__wrapper--action .follow_btn {
+  width: auto;
+  padding: 1rem 2rem;
+  border: 2px solid rgba(137, 137, 137, 0.25);
+  background-color: rgba(137, 137, 137, 0.25);
+  border-radius: 4.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(224, 224, 224);
+}
+.artists__section .artist__nav {
+  max-width: 87rem;
+}
+.artists__section .artist__nav nav {
+  width: 100%;
+  margin: 2rem 0;
+  padding-left: 4.6rem;
+  padding-right: 2rem;
+}
+.artists__section .artist__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: max-content;
+  white-space: nowrap;
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.artists__section .artist__nav .active {
+  color: rgb(224, 224, 224);
+}
+.artists__section .artist_table {
+  margin-top: 4rem;
+  margin-left: 2.5rem;
+  gap: 2rem;
+}
+.artists__section .artist_table .artists__section--header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.artists__section .artist_table .plalist__table-section {
+  width: 100%;
+}
+.artists__section .arsist__song-row {
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+}
+.artists__section .artist__music-wrapper {
+  display: flex;
+  gap: 4.7rem;
+  border-top: 1px solid rgba(137, 137, 137, 0.2);
+}
+.artists__section .artist__music-wrapper .artist__pick {
+  margin-top: 4rem;
+  margin-right: 3.8rem;
+}
+.artists__section .artist__music-wrapper .artist__pick h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(224, 224, 224);
+}
+.artists__section .artist__music-wrapper .artist__pick .artist__pick--cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+.artists__section .artist__music-wrapper .artist__pick .artist__pick--cards .artist__pick--card {
+  width: 31.4rem;
+  background-color: rgba(24, 25, 30, 0.3);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.2rem 1.3rem;
+}
+.artists__section .artist__music-wrapper .artist__pick .artist__pick--cards .artist__pick--card p {
+  color: rgb(224, 224, 224);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.artists__section .artis__content-mobile {
+  margin-top: -3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
 @media screen and (max-width: 400px) {
   .home-content {
     padding: 1.3rem 1.5rem;
@@ -1532,6 +1698,16 @@ body {
   .mobile__cover {
     display: none;
   }
+  .artists__section--header,
+  .artist__table {
+    display: flex !important;
+  }
+  .songs-list {
+    width: 100%;
+  }
+  .artis__content-mobile {
+    display: none !important;
+  }
 }
 @media (min-width: 1061px) {
   .header {
@@ -1602,6 +1778,10 @@ body {
   .action__wrapper {
     display: none !important;
   }
+  .artist__nav nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 @media (max-width: 1230px) {
   .cover__section {
@@ -1612,6 +1792,20 @@ body {
   }
   .playlist-table {
     width: 100%;
+  }
+  .artist__music-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .artis__content-mobile {
+    display: flex !important;
+  }
+  .artists__section--header,
+  .artist__table, .artist__pick, .artist__nav, .artist__cover-wrapper {
+    display: none !important;
+    background-color: salmon;
   }
 }
 
