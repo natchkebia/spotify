@@ -1454,10 +1454,38 @@ body {
   font-weight: 500;
 }
 .artists__section .artis__content-mobile {
-  margin-top: -3.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  padding: 1.3rem 1.5rem;
+}
+
+.artist__about-section {
+  border-top: 1px solid rgba(137, 137, 137, 0.2);
+  padding: 4rem 4.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: rgb(224, 224, 224);
+  gap: 3rem;
+}
+.artist__about-section .info {
+  max-width: 75rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.artist__about-section .about-artist {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+.artist__about-section .about-artist p {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.artist__about-section .about-artist span {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 400px) {
@@ -1803,9 +1831,12 @@ body {
     display: flex !important;
   }
   .artists__section--header,
-  .artist__table, .artist__pick, .artist__nav, .artist__cover-wrapper {
+  .artist__table, .artist__pick, .artist__nav, .artist__cover-wrapper, .artist__music-wrapper {
     display: none !important;
     background-color: salmon;
+  }
+  .artist__about-section {
+    display: none !important;
   }
 }
 

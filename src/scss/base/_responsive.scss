@@ -395,8 +395,12 @@
   }
 
    .artists__section--header,
-  .artist__table, .artist__pick, .artist__nav, .artist__cover-wrapper {
+  .artist__table, .artist__pick, .artist__nav, .artist__cover-wrapper, .artist__music-wrapper {
     display: none !important;
     background-color: salmon;
   }
+
+      .artist__about-section {
+      display: none !important;
+    }
 }
