@@ -166,7 +166,7 @@
       <div class="layout__sidebar">
         <section class="hero">
           <!-- side bar -->
-          <aside class="sidebar pinned__sidebar">
+          <aside class="sidebar">
             <nav class="sidebar-nav">
               <ul class="sidebar-list">
                 <li class="sidebar-item">
@@ -216,7 +216,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link liked-link">
+                  <a href="./liked.html" class="sidebar-link">
                     <img
                       src="./assets/images/aside icons/liked.png"
                       alt="Liked songs icon"
@@ -282,7 +282,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="./artist.html" class="sidebar-link">
+                  <a href="#" class="sidebar-link liked-link">
                     <img
                       src="./assets/images/aside icons/artists.png"
                       alt="Artists icon"
@@ -298,312 +298,353 @@
       </div>
       <div class="layout__main">
         <!-- main page main content -->
-        <section class="home-content">
-          <div class="home-section">
-            <div class="penned__filters--wrapper liked__filter--wrapper">
-              <div>
-                <button class="pluse-btn">
-                  <img
-                    src="./assets/images/pinned-page/pluse.svg"
-                    alt="pluse"
-                  />
-                </button>
-              </div>
-              <div>
-                <div class="penned__icon-wraper">
-                  <button class="active_button">
+        <section class="home-content artis__content">
+          <div class="home-section artists__section">
+            <div class="artist__cover-wrapper">
+              <img
+                src="./assets/images/artist/artist_cover.png"
+                alt="cover image"
+              />
+              <div class="cover__wrapper--header">
+                <div class="cover__wrapper--about">
+                  <p>Daft Punk</p>
+                  <span>20,795,080 monthly listeners</span>
+                </div>
+                <div class="cover__wrapper--action">
+                  <button class="active-btn">
+                    <img src="./assets/images/playlist/Play.svg" alt="play" />
+                  </button>
+                  <button class="follow_btn">Follow</button>
+                  <button>
                     <img
-                      src="./assets/images/liked-song-page/List.svg"
-                      alt="list"
+                      src="./assets/images/playlist/Add.svg"
+                      alt="add buton"
                     />
                   </button>
                   <button>
                     <img
-                      src="./assets/images/liked-song-page/GridViewIcon.svg"
-                      alt="GridViewIcon"
+                      src="./assets/images/playlist/Add-to-Queue.svg"
+                      alt="add Add-to-Queue"
                     />
                   </button>
-                </div>
-                <div class="penned__icon-wraper">
                   <button>
-                    <img
-                      src="./assets/images/pinned-page/SortIcon.svg"
-                      alt="SortIcon"
-                    />
+                    <img src="./assets/images/playlist/dotes.svg" alt="dotes" />
                   </button>
-                  <span>Recent</span>
                 </div>
-                <div class="penned__icon-wraper">
-                  <button>
-                    <img
-                      src="./assets/images/pinned-page/FilterIcon.svg"
-                      alt="Filter-icon"
-                    />
-                  </button>
-                  <span>Group</span>
-                </div>
-                <button class="search-btn">
+              </div>
+            </div>
+            <div class="album__nav">
+              <div class="nav-container">
+                <nav>
+                  <ul>
+                    <li><a href="./artist.html">Home</a></li>
+                    <li>
+                      <a href="./artist-albums.html" class="active">Albums</a>
+                    </li>
+                    <li><a href="#">Singles and EPs</a></li>
+                    <li><a href="#">Compilattions</a></li>
+                    <li><a href="#">Merch</a></li>
+                    <li>
+                      <a href="./artist-about.html">About</a>
+                    </li>
+                    <li><a href="#">Features & More</a></li>
+                    <li>
+                      <img src="./assets/images/playlist/search.svg" alt="" />
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div>
+                <button>
                   <img
-                    src="./assets/images/pinned-page/SearchIcon.svg"
-                    alt="search"
+                    src="./assets/images/artist/icon-column.svg"
+                    alt="icon-column"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="./assets/images/artist/icon-row.svg"
+                    alt="icon-row"
                   />
                 </button>
               </div>
             </div>
 
-            <div class="songs-table">
-              <div class="songs-header">
-                <span>#</span>
-                <span>Title</span>
-                <span>Album</span>
-                <span>Duration</span>
-                <span></span>
-              </div>
+            <section class="artist__albums-section">
+              <div class="home-section">
+                <!-- made for you section -->
+                <div>
+                  <div class="home-section__row">
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame1.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Discover Weekly</h4>
+                          <span class="Number-of-songs">50</span>
+                        </div>
+                        <p>Your weekly mixtape of fresh music.</p>
+                      </div>
+                    </article>
 
-              <div class="songs-list">
-                <div class="song-row">
-                  <div class="song-index">1</div>
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame2.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Daily Mix 1</h4>
+                          <span class="Number-of-songs1">50</span>
+                        </div>
+                        <p>Linkin Park, System Of A Down, Coal Chamber...</p>
+                      </div>
+                    </article>
 
-                  <div class="song-info">
-                    <img
-                      src="./assets/images/liked-song-page/frame1.png"
-                      alt="Get Lucky"
-                    />
-                    <div class="text">
-                      <h4>Get Lucky</h4>
-                      <p>Daft Punk</p>
-                    </div>
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame3.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Daily Mix 2</h4>
+                          <span class="Number-of-songs2">50</span>
+                        </div>
+                        <p>Avril Lavigne, Lorde, Charli XCX and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame4.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Daily Mix 3</h4>
+                          <span class="Number-of-songs3">50</span>
+                        </div>
+                        <p>The Strokes, Martin Garrix, MGMT and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame5.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Daily Mix 4</h4>
+                          <span class="Number-of-songs4">50</span>
+                        </div>
+                        <p>Chuck Berry, Elvis Presley, Roy Orbison and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame6.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Daily Mix 5</h4>
+                          <span class="Number-of-songs5">50</span>
+                        </div>
+                        <p>The Strokes, Martin Garrix, MGMT and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame7.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Nirvana Radio</h4>
+                          <span class="Number-of-songs6">50</span>
+                        </div>
+                        <p>The Strokes, Martin Garrix, MGMT and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame8.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Fall Out Boy Radio</h4>
+                          <span class="Number-of-songs7">50</span>
+                        </div>
+                        <p>
+                          With Panic! At The Disco, The All-American Rejects,...
+                        </p>
+                      </div>
+                    </article>
                   </div>
-
-                  <div class="song-album">Random Access Memories</div>
-                  <div class="song-duration">4:35</div>
-                  <img
-                    src="./assets/images/liked-song-page/heart.svg"
-                    alt="heart svg"
-                  />
                 </div>
+                <!-- made for you section -->
 
-                <div class="song-row">
-                  <div class="song-index">2</div>
+                <!-- Your top mixes section -->
+                <div>
+                  <div class="home-section__row">
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame8.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Rock Mix</h4>
+                          <span class="Number-of-songs8">50</span>
+                        </div>
+                        <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
+                      </div>
+                    </article>
 
-                  <div class="song-info">
-                    <img
-                      src="./assets/images/liked-song-page/frame1.png"
-                      alt="Instant Crush"
-                    />
-                    <div class="text">
-                      <h4>Instant Crush</h4>
-                      <p>Daft Punk, Julian Casablancas</p>
-                    </div>
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame7.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Chill Mix</h4>
+                          <span class="Number-of-songs9">50</span>
+                        </div>
+                        <p>MF DOOM, Daft Punk, The Chainsmokers, and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame6.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Pop Mix</h4>
+                          <span class="Number-of-songs10">50</span>
+                        </div>
+                        <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame5.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Daft Punk Mix</h4>
+                          <span class="Number-of-songs11">50</span>
+                        </div>
+                        <p>Daft Punk, MGMT, Muse, and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame4.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Happy Mix</h4>
+                          <span class="Number-of-songs12">50</span>
+                        </div>
+                        <p>The Turtles, Van Morrison, ABBA and more</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame3.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>David Bowie Mix</h4>
+                          <span class="Number-of-songs13">50</span>
+                        </div>
+                        <p>Soft Cell, The Who and The Clash</p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame2.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>Upbeat Mix</h4>
+                          <span class="Number-of-songs14">50</span>
+                        </div>
+                        <p>
+                          Kylie Minogue, Charli XCX, Cage The Elephant and...
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="media-card">
+                      <div class="media-card__img card__img--wrapper">
+                        <img
+                          src="./assets/images/artist/Frame1.png"
+                          alt="music card"
+                        />
+                      </div>
+                      <div class="media-card__meta">
+                        <div>
+                          <h4>60s Mix</h4>
+                          <span class="Number-of-songs15">50</span>
+                        </div>
+                        <p>Chuck Berry, Skeeter David, Van Morrison and...</p>
+                      </div>
+                    </article>
                   </div>
-
-                  <div class="song-album">Random Access Memories</div>
-                  <div class="song-duration">5:37</div>
-                  <img
-                    src="./assets/images/liked-song-page/heart.svg"
-                    alt="heart svg"
-                  />
                 </div>
-
-                <div class="song-row">
-                  <div class="song-index">3</div>
-
-                  <div class="song-info">
-                    <img
-                      src="./assets/images/liked-song-page/frame2.png"
-                      alt="On Melancholy Hill"
-                    />
-                    <div class="text">
-                      <h4>On Melancholy Hill</h4>
-                      <p>Gorillaz</p>
-                    </div>
-                  </div>
-
-                  <div class="song-album">Plastic Beach</div>
-                  <div class="song-duration">3:53</div>
-                  <img
-                    src="./assets/images/liked-song-page/heart.svg"
-                    alt="heart svg"
-                  />
-                </div>
-
-                <div class="song-row">
-                  <div class="song-index">4</div>
-
-                  <div class="song-info">
-                    <img
-                      src="./assets/images/liked-song-page/frame3.png"
-                      alt="Tainted Love"
-                    />
-                    <div class="text">
-                      <h4>Tainted Love</h4>
-                      <p>Soft Cell</p>
-                    </div>
-                  </div>
-
-                  <div class="song-album">Non-Stop Erotic Cabaret</div>
-                  <div class="song-duration">2:32</div>
-                  <img
-                    src="./assets/images/liked-song-page/heart.svg"
-                    alt="heart svg"
-                  />
-                </div>
-                <div class="song-row">
-                  <div class="song-index">5</div>
-
-                  <div class="song-info">
-                    <img
-                      src="./assets/images/liked-song-page/frame4.png"
-                      alt="One More Time"
-                    />
-                    <div class="text">
-                      <h4>One More Time</h4>
-                      <p>Daft Punk</p>
-                    </div>
-                  </div>
-
-                  <div class="song-album">Discovery</div>
-                  <div class="song-duration">5:20</div>
-                  <img
-                    src="./assets/images/liked-song-page/heart.svg"
-                    alt="heart svg"
-                  />
-                </div>
-                <div class="song-row">
-                  <div class="song-index">6</div>
-
-                  <div class="song-info">
-                    <img
-                      src="./assets/images/liked-song-page/frame5.png"
-                      alt="Electric Feel"
-                    />
-                    <div class="text">
-                      <h4>Electric Feel</h4>
-                      <p>MGMT</p>
-                    </div>
-                  </div>
-
-                  <div class="song-album">Oracular Spectacular</div>
-                  <div class="song-duration">3:49</div>
-                  <img
-                    src="./assets/images/liked-song-page/heart.svg"
-                    alt="heart svg"
-                  />
-                </div>
-                <div class="song-row">
-                  <div class="song-index">7</div>
-
-                  <div class="song-info">
-                    <img
-                      src="./assets/images/liked-song-page/frame1.png"
-                      alt="Give Life Back to Music"
-                    />
-                    <div class="text">
-                      <h4>Give Life Back to Music</h4>
-                      <p>Daft Punk</p>
-                    </div>
-                  </div>
-
-                  <div class="song-album">Random Access Memories</div>
-                  <div class="song-duration">4:35</div>
-                  <img
-                    src="./assets/images/liked-song-page/heart.svg"
-                    alt="heart svg"
-                  />
-                </div>
+                <!-- Your top mixes section -->
               </div>
-            </div>
-            <div class="search__filter--wrapper--mobile">
-              <div class="search__page-mobile-input">
-                <input
-                  type="text"
-                  name="search"
-                  placeholder="Search library"
-                  class="search"
-                />
-                <img
-                  src="./assets/images/header icons/search.png"
-                  alt="Search icon"
-                  class="nav-icon"
-                />
-              </div>
-              <button>
-                <img
-                  src="./assets/images/liked-song-page/pluse.svg"
-                  alt="pluse"
-                />
-              </button>
-            </div>
-            <div class="liked__song--actions">
-              <div class="penned__icon-wraper">
-                <button>
-                  <img
-                    src="./assets/images/liked-song-page/GridViewIcon.svg"
-                    alt="GridViewIcon"
-                  />
-                </button>
-                <span>Recent</span>
-              </div>
-              <div class="penned__icon-wraper">
-                <button>
-                  <img
-                    src="./assets/images/pinned-page/FilterIcon.svg"
-                    alt="Filter-icon"
-                  />
-                </button>
-                <span>Group</span>
-              </div>
-            </div>
-            <div class="liked__song--mobile-content">
-              <div>
-                <p>Playlists</p>
-                <button>
-                  <img
-                    src="./assets/images/liked-song-page/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                </button>
-              </div>
-              <div>
-                <p>Playlists by Spotify</p>
-                <button>
-                  <img
-                    src="./assets/images/liked-song-page/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                </button>
-              </div>
-
-              <div>
-                <p>Albums</p>
-                <button>
-                  <img
-                    src="./assets/images/liked-song-page/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                </button>
-              </div>
-
-              <div>
-                <p>Folders</p>
-                <button>
-                  <img
-                    src="./assets/images/liked-song-page/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                </button>
-              </div>
-
-              <div>
-                <p>Artists</p>
-                <button>
-                  <img
-                    src="./assets/images/liked-song-page/arrow-right.svg"
-                    alt="arrow-right"
-                  />
-                </button>
-              </div>
-            </div>
+            </section>
           </div>
         </section>
         <!-- main page main content -->

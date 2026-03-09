@@ -15,9 +15,9 @@
               <!-- Left Navigation -->
               <ul class="nav-links">
                 <li class="nav-item pinned_home-btn">
-                  <a href="./index.html" class="nav-link">
+                  <a href="./index.html" class="nav-link home-secondary">
                     <img
-                      src="./assets/images/header icons/home.png"
+                      src="./assets/images/artist/home icon.svg"
                       alt="Home icon"
                       class="nav-icon"
                     />
@@ -109,9 +109,9 @@
             <nav class="mobile-navigation">
               <ul class="mobile-nav-links">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link">
+                  <a href="./index.html" class="nav-link home-secondary">
                     <img
-                      src="./assets/images/header icons/home.png"
+                      src="./assets/images/artist/home icon.svg"
                       alt="Home icon"
                       class="nav-icon"
                     />
@@ -300,11 +300,44 @@
         <!-- main page main content -->
         <section class="home-content artis__content">
           <div class="home-section artists__section">
+            <div class="artist__cover-wrapper">
+              <img
+                src="./assets/images/artist/artist_cover.png"
+                alt="cover image"
+              />
+              <div class="cover__wrapper--header">
+                <div class="cover__wrapper--about">
+                  <p>Daft Punk</p>
+                  <span>20,795,080 monthly listeners</span>
+                </div>
+                <div class="cover__wrapper--action">
+                  <button class="active-btn">
+                    <img src="./assets/images/playlist/Play.svg" alt="play" />
+                  </button>
+                  <button class="follow_btn">Follow</button>
+                  <button>
+                    <img
+                      src="./assets/images/playlist/Add.svg"
+                      alt="add buton"
+                    />
+                  </button>
+                  <button>
+                    <img
+                      src="./assets/images/playlist/Add-to-Queue.svg"
+                      alt="add Add-to-Queue"
+                    />
+                  </button>
+                  <button>
+                    <img src="./assets/images/playlist/dotes.svg" alt="dotes" />
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="artist__nav">
               <nav>
                 <ul>
                   <li><a href="./artist.html">Home</a></li>
-                  <li><a href="#">Albums</a></li>
+                  <li><a href="./artist-albums.html">Albums</a></li>
                   <li><a href="#">Singles and EPs</a></li>
                   <li><a href="#">Compilattions</a></li>
                   <li><a href="#">Merch</a></li>
@@ -528,7 +561,7 @@
 
             <div class="artis__content-mobile">
               <div class="search__filter--wrapper--mobile">
-                <div class="search__page-mobile-input" >
+                <div class="search__page-mobile-input">
                   <input
                     type="text"
                     name="search"

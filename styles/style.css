@@ -1488,6 +1488,64 @@ body {
   font-weight: 400;
 }
 
+.album__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 1.1rem 1.6rem;
+}
+.album__nav .nav-container {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+.album__nav .nav-container nav {
+  padding-left: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  scrollbar-width: thin;
+}
+.album__nav .nav-container ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: max-content;
+  min-width: max-content;
+  white-space: nowrap;
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.album__nav .nav-container li {
+  flex-shrink: 0;
+}
+.album__nav > div:last-child {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.9rem;
+}
+.album__nav > div:last-child button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.artist__albums-section {
+  border-top: 1px solid rgba(137, 137, 137, 0.2);
+  padding: 2rem;
+}
+
+.active {
+  color: rgb(224, 224, 224);
+}
+
+.home-secondary span {
+  color: rgb(137, 137, 137);
+}
+
 @media screen and (max-width: 400px) {
   .home-content {
     padding: 1.3rem 1.5rem;
