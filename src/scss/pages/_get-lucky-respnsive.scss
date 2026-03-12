@@ -19,7 +19,9 @@
   @media screen and (max-width: 490px) {
     .mobile-music-section {
       display: block;
-      padding: 6.88rem 2rem 2rem;
+    }
+    .head-mobile-section {
+      padding: 2.88rem 0rem 1rem;
     }
 
     .layout__footer {
@@ -50,7 +52,9 @@
       padding-bottom: 0 !important;
       z-index: auto;
     }
-
+    .Playback-controls {
+      flex-shrink: 0;
+    }
     .mobile-music-section .Playback-controls {
       display: flex;
       gap: 3.4rem;
@@ -171,12 +175,29 @@
         }
       }
     }
-
     .control-page {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10000;
+      flex-shrink: 0;
+      padding-bottom: 2rem;
+
       .control-list {
         @include mixins.flex-between;
-        margin-top: 7rem;
+        margin-top: 2rem;
       }
+    }
+
+    .lyrics-mobile-opened {
+      display: none;
+    }
+
+    .lyrics-mobile-opened:not(.closed) {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
     }
 
     .album-control {
@@ -194,6 +215,12 @@
         color: v.$main-title-color;
         font-weight: 400;
       }
+    }
+    .lyrics-opened-p-name {
+      width: 50%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     .music-name-favorite {
@@ -235,6 +262,46 @@
     .control-music img {
       width: 4rem;
       height: 4rem;
+    }
+  }
+
+  // show / hide helpers (scoped)
+  .lyrics-mobile-opened.closed,
+  .lyrics-icon.closed,
+  .head-mobile-section.closed {
+    display: none;
+  }
+
+  // lyriccs opened
+  .lyric-div {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    height: 46rem;
+    width: 100%;
+
+    p {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: v.$main-title-color;
+      flex: 1;
+      min-width: 0;
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+  .head-mobile-section-lyrics-opened {
+    padding: 2.8rem 0rem 2rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .album-photo-mobile {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 35.4rem;
     }
   }
 }

@@ -374,7 +374,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  align-items: start;
+  align-items: flex-start;
   padding: 3.7rem;
   gap: 6rem;
 }
@@ -390,7 +390,7 @@ body {
   color: rgb(224, 224, 224);
   font-size: 3.6rem;
   width: 80%;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 .info .music-release-info {
   display: flex;
@@ -452,10 +452,6 @@ body {
   overflow: hidden;
   background: linear-gradient(180deg, rgba(15, 17, 21, 0.88), rgba(26, 31, 39, 0.82), rgba(13, 16, 22, 0.9));
   background-color: rgba(138, 157, 187, 0.1803921569) !important;
-}
-
-.home-content {
-  background: linear-gradient(180deg, rgba(137, 137, 137, 0.2) rgba(137, 137, 137, 0.2) rgba(137, 137, 137, 0.2));
 }
 
 .lyrics {
@@ -527,7 +523,9 @@ body {
 @media screen and (max-width: 490px) {
   .page-get-lucky .mobile-music-section {
     display: block;
-    padding: 6.88rem 2rem 2rem;
+  }
+  .page-get-lucky .head-mobile-section {
+    padding: 2.88rem 0rem 1rem;
   }
   .page-get-lucky .layout__footer {
     display: none !important;
@@ -551,6 +549,9 @@ body {
   .page-get-lucky .layout__main {
     padding-bottom: 0 !important;
     z-index: auto;
+  }
+  .page-get-lucky .Playback-controls {
+    flex-shrink: 0;
   }
   .page-get-lucky .mobile-music-section .Playback-controls {
     display: flex;
@@ -655,11 +656,28 @@ body {
     background-color: rgb(224, 223, 224);
     height: 4px;
   }
+  .page-get-lucky .control-page {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    flex-shrink: 0;
+    padding-bottom: 2rem;
+  }
   .page-get-lucky .control-page .control-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 7rem;
+    margin-top: 2rem;
+  }
+  .page-get-lucky .lyrics-mobile-opened {
+    display: none;
+  }
+  .page-get-lucky .lyrics-mobile-opened:not(.closed) {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
   }
   .page-get-lucky .album-control {
     display: flex;
@@ -678,6 +696,12 @@ body {
     font-size: 1.2rem;
     color: rgb(224, 224, 224);
     font-weight: 400;
+  }
+  .page-get-lucky .lyrics-opened-p-name {
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .page-get-lucky .music-name-favorite {
     margin-top: 1rem;
@@ -720,6 +744,40 @@ body {
     width: 4rem;
     height: 4rem;
   }
+}
+.page-get-lucky .lyrics-mobile-opened.closed,
+.page-get-lucky .lyrics-icon.closed,
+.page-get-lucky .head-mobile-section.closed {
+  display: none;
+}
+.page-get-lucky .lyric-div {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  height: 46rem;
+  width: 100%;
+}
+.page-get-lucky .lyric-div p {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: rgb(224, 224, 224);
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+.page-get-lucky .head-mobile-section-lyrics-opened {
+  padding: 2.8rem 0rem 2rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.page-get-lucky .album-photo-mobile {
+  width: 100%;
+}
+.page-get-lucky .album-photo-mobile img {
+  width: 100%;
+  height: 35.4rem;
 }
 
 .layout__footer {

@@ -1,4 +1,3 @@
-@use "../abstracts/variables";
 @use "../abstracts/mixins";
 @use "../abstracts/variables" as v;
 
@@ -11,7 +10,7 @@
 
 .song-info-suggestion {
   @include mixins.flex-row;
-  align-items: start;
+  align-items: flex-start;
   padding: 3.7rem;
   gap: 6rem;
 }
@@ -21,16 +20,16 @@
   gap: 1rem;
   .music-title {
     h1 {
-      color: variables.$main-title-color;
+      color: v.$main-title-color;
       font-size: 3.6rem;
       width: 80%;
-      letter-spacing: 3%;
+      letter-spacing: 0.03em;
     }
   }
   .music-release-info {
     @include mixins.flex-between;
     gap: 1rem;
-    color: variables.$muted-text;
+    color: v.$muted-text;
   }
   .control-play {
     img {
@@ -42,7 +41,7 @@
   .music-style {
     @include mixins.flex-between;
     gap: 1rem;
-    color: variables.$muted-text;
+    color: v.$muted-text;
     p {
       border: 2px solid #89898940;
       border-radius: 4.4rem;
@@ -65,11 +64,11 @@
     .name-role {
       h2 {
         cursor: pointer;
-        color: variables.$main-title-color;
+        color: v.$main-title-color;
       }
       h3 {
         margin-top: 1rem;
-        color: variables.$muted-text;
+        color: v.$muted-text;
       }
     }
   }
@@ -87,13 +86,6 @@
   background-color: #8a9dbb2e !important;
 }
 
-.home-content {
-  background: linear-gradient(
-    180deg,
-    rgba(137, 137, 137, 0.2) rgba(137, 137, 137, 0.2) rgba(137, 137, 137, 0.2)
-  );
-}
-
 .lyrics {
   padding: 0 2rem 2rem 4rem;
   font-size: 1.4rem;
@@ -102,9 +94,9 @@
   .nav-list {
     @include mixins.flex-row;
     gap: 5rem;
-    color: variables.$muted-text;
+    color: v.$muted-text;
     .opened {
-      color: variables.$main-title-color;
+      color: v.$main-title-color;
       position: relative;
     }
     .opened::after {
@@ -134,7 +126,7 @@
 .lyrics-text {
   @include mixins.flex-column-start;
   gap: 2rem;
-  color: variables.$main-title-color;
+  color: v.$main-title-color;
   font-size: 2.8rem;
   font-weight: 700;
 }

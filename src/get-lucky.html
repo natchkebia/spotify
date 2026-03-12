@@ -298,7 +298,7 @@
       </div>
       <div class="layout__main">
         <!-- main page main content -->
-        <section class="home-content for-mobile">
+        <section class="home-content">
           <div class="home-section">
             <div class="song-info-suggestion">
               <div class="album-photo">
@@ -453,99 +453,222 @@
           </div>
           <!-- mobile content -->
           <section class="mobile-music-section">
-            <div class="album-control">
-              <div class="arrow-list">
-                <img
-                  src="./assets/images/song-get-lucky//mobile/down-arrow.png"
-                  alt=""
-                />
-              </div>
-              <div class="album-name">
-                <img
-                  src="./assets/images/song-get-lucky//mobile/mini-album-cion.png"
-                  alt=""
-                />
-                <p>Random Access Memories</p>
-              </div>
-            </div>
-            <div class="album-photo-mobile">
-              <img
-                src="./assets/images/song-get-lucky/song album photo.png"
-                alt=""
-              />
-            </div>
-            <div class="music-name-favorite">
-              <div class="music-name">
-                <div class="music-title">
-                  <h2>Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h2>
-                </div>
-                <div class="favorite">
+            <div class="head-mobile-section">
+              <div class="album-control">
+                <div class="arrow-list">
                   <img
-                    src="./assets/images/song-get-lucky/favortie.png"
-                    alt=""
-                  />
-                  <img
-                    src="./assets/images/song-get-lucky/add-playlist.png"
+                    src="./assets/images/song-get-lucky//mobile/down-arrow.png"
                     alt=""
                   />
                 </div>
-              </div>
-              <h2>Daft Punk</h2>
-            </div>
-            <!-- playback controll -->
-            <div class="Playback-controls">
-              <div class="Playback__controls--Progress-bar">
-                <div class="audio-slider-container">
-                  <div class="time-line">
-                    <input
-                      type="range"
-                      class="custom-range"
-                      min="0"
-                      max="100"
-                      value="50"
-                    />
-                  </div>
-                  <div class="time-show">
-                    <span class="time-display">2:23</span>
-
-                    <span class="time-display">4:45</span>
-                  </div>
-                </div>
-                <div class="control-music">
-                  <button>
-                    <img
-                      src="./assets/images/footer-icons/Shuffle.svg"
-                      alt="Shuffle img"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="./assets/images/footer-icons/Previous-track.svg"
-                      alt="Previous-track img"
-                    />
-                  </button>
-                  <button class="play-button">
-                    <img
-                      src="./assets/images/song-get-lucky/mobile/mobile-play.png"
-                      alt="Play-Pause img"
-                    />
-                  </button>
-                  <button>
-                    <img
-                      src="./assets/images/footer-icons/Next-Track.svg"
-                      alt="Next-Track img"
-                    />
-                  </button>
-
-                  <button>
-                    <img
-                      src="./assets/images/footer-icons/player-nowplaying.svg"
-                      alt="player-nowplaying img"
-                    />
-                  </button>
+                <div class="album-name">
+                  <img
+                    src="./assets/images/song-get-lucky//mobile/mini-album-cion.png"
+                    alt=""
+                  />
+                  <p>Random Access Memories</p>
                 </div>
               </div>
+              <div class="album-photo-mobile">
+                <img
+                  src="./assets/images/song-get-lucky/song album photo.png"
+                  alt=""
+                />
+              </div>
+              <div class="music-name-favorite">
+                <div class="music-name">
+                  <div class="music-title">
+                    <h2>
+                      Get Lucky (feat. Pharrell Williams and Nile Rodgers)
+                    </h2>
+                  </div>
+                  <div class="favorite">
+                    <img
+                      src="./assets/images/song-get-lucky/favortie.png"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/images/song-get-lucky/add-playlist.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h2>Daft Punk</h2>
+              </div>
+              <!-- playback controll -->
+              <div class="Playback-controls">
+                <div class="Playback__controls--Progress-bar">
+                  <div class="audio-slider-container">
+                    <div class="time-line">
+                      <input
+                        type="range"
+                        class="custom-range"
+                        min="0"
+                        max="100"
+                        value="50"
+                      />
+                    </div>
+                    <div class="time-show">
+                      <span class="time-display">2:23</span>
+
+                      <span class="time-display">4:45</span>
+                    </div>
+                  </div>
+                  <div class="control-music">
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/Shuffle.svg"
+                        alt="Shuffle img"
+                      />
+                    </button>
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/Previous-track.svg"
+                        alt="Previous-track img"
+                      />
+                    </button>
+                    <button class="play-button">
+                      <img
+                        src="./assets/images/song-get-lucky/mobile/mobile-play.png"
+                        alt="Play-Pause img"
+                      />
+                    </button>
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/Next-Track.svg"
+                        alt="Next-Track img"
+                      />
+                    </button>
+
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/player-nowplaying.svg"
+                        alt="player-nowplaying img"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- lyrics mobile opened -->
+            <section class="lyrics-mobile-opened closed">
+              <div class="head-mobile-section-lyrics-opened">
+                <div class="album-control">
+                  <div class="arrow-list">
+                    <img
+                      src="./assets/images/song-get-lucky//mobile/down-arrow.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="album-name">
+                    <img
+                      src="./assets/images/friedn-activity-icons/active.png"
+                      alt=""
+                    />
+                    <p class="lyrics-opened-p-name">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</p>
+                  </div>
+                </div>
+                <div class="lyric-div">
+                  <p>
+                    Like the legend of the phoenix, huh <br />
+                    All ends with beginnings<br />
+                    What keeps the planet spinning, ah<br />
+                    The force from the beginning, hm, look<br />
+                    We've come too far<br />
+                    To give up who we are<br />
+                    So let's raise the bar<br />
+                    And our cups to the stars<br />
+                    She's up all night 'til the sun<br />
+                    I'm up all night to get some<br />
+                    She’s up all night for good fun<br />
+                    I’m up all night to get lucky<br />
+                    We’re up all night ‘til the sun<br />
+                    We’re up all night to get some<br />
+                    We’re up all night for good fun<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky<br />
+                    The present has no rhythm<br />
+                    Your gift keeps on giving<br />
+                    What is this I’m feeling?<br />
+                    If you want to leave, I’m with it<br />
+                    We’ve come too far<br />
+                    To give up who we are<br />
+                    So let’s raise the bar<br />
+                    And our cups to the stars<br />
+                    She's up all night 'til the sun<br />
+                    I'm up all night to get some<br />
+                    She’s up all night for good fun<br />
+                    I’m up all night to get lucky<br />
+                    We’re up all night ‘til the sun<br />
+                    We’re up all night to get some<br />
+                    We’re up all night for good fun<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky<br />
+                    We’re up all night to get lucky
+                  </p>
+                </div>
+              </div>
+              <!-- lyrics mobile opened -->
+              <!-- playback controll -->
+              <div class="Playback-controls">
+                <div class="Playback__controls--Progress-bar">
+                  <div class="audio-slider-container">
+                    <div class="time-line">
+                      <input
+                        type="range"
+                        class="custom-range"
+                        min="0"
+                        max="100"
+                        value="50"
+                      />
+                    </div>
+                    <div class="time-show">
+                      <span class="time-display">2:23</span>
+
+                      <span class="time-display">4:45</span>
+                    </div>
+                  </div>
+                  <div class="control-music">
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/Shuffle.svg"
+                        alt="Shuffle img"
+                      />
+                    </button>
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/Previous-track.svg"
+                        alt="Previous-track img"
+                      />
+                    </button>
+                    <button class="play-button">
+                      <img
+                        src="./assets/images/song-get-lucky/mobile/mobile-play.png"
+                        alt="Play-Pause img"
+                      />
+                    </button>
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/Next-Track.svg"
+                        alt="Next-Track img"
+                      />
+                    </button>
+
+                    <button>
+                      <img
+                        src="./assets/images/footer-icons/player-nowplaying.svg"
+                        alt="player-nowplaying img"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
             <!-- playback controll -->
             <!-- control page -->
             <div class="control-page">
@@ -558,10 +681,19 @@
                   src="./assets/images/song-get-lucky/mobile/mobile-share.png"
                   alt=""
                 />
-                <img
-                  src="./assets/images/song-get-lucky/mobile/lyrics.png"
-                  alt=""
-                />
+                <a href="#" class="lyrics-page-mobile">
+                  <img
+                    class="lyrics-icon closed-icon"
+                    src="./assets/images/song-get-lucky/mobile/lyrics-mobile.png"
+                    alt=""
+                  />
+                  <img
+                    class="lyrics-icon opened-icon closed"
+                    src="./assets/images/song-get-lucky/mobile/lyrics.png"
+                    alt=""
+                  />
+                </a>
+
                 <img
                   src="./assets/images/song-get-lucky/mobile/list.png"
                   alt=""
@@ -574,8 +706,8 @@
             </div>
           </section>
         </section>
-        <!-- main page main content -->
       </div>
+      <!-- main page main content -->
       <!-- footer section -->
       <div class="layout__footer">
         <div>
@@ -709,5 +841,22 @@
       </div>
       <!-- footer section -->
     </div>
+    <script>
+      const btn = document.querySelector(".lyrics-page-mobile");
+      const closedIcon = document.querySelector(".closed-icon");
+      const openedIcon = document.querySelector(".opened-icon");
+      const mobileMusicSection = document.querySelector(
+        ".mobile-music-section > .head-mobile-section",
+      );
+      const mobileMusicLyrics = document.querySelector(".lyrics-mobile-opened");
+      btn?.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        mobileMusicLyrics?.classList.toggle("closed");
+        mobileMusicSection?.classList.toggle("closed");
+        closedIcon?.classList.toggle("closed");
+        openedIcon?.classList.toggle("closed");
+      });
+    </script>
   </body>
 </html>
