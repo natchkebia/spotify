@@ -19,6 +19,7 @@
   @media screen and (max-width: 490px) {
     .mobile-music-section {
       display: block;
+      padding-bottom: 18rem;
     }
     .head-mobile-section {
       padding: 2.88rem 0rem 1rem;
@@ -55,10 +56,10 @@
     .Playback-controls {
       flex-shrink: 0;
     }
-    .mobile-music-section .Playback-controls {
+    .mobile-music-section .Playback-controls,
+    .full-control .Playback-controls {
       display: flex;
       gap: 3.4rem;
-      margin-top: 6rem;
 
       button {
         transition:
@@ -182,7 +183,7 @@
       bottom: 0;
       z-index: 10000;
       flex-shrink: 0;
-      padding-bottom: 2rem;
+      padding-bottom: calc(2rem + env(safe-area-inset-bottom));
 
       .control-list {
         @include mixins.flex-between;
@@ -198,6 +199,8 @@
       height: 80vh;
       display: flex;
       flex-direction: column;
+      box-sizing: border-box;
+      padding-bottom: 18rem;
     }
 
     .album-control {
@@ -263,45 +266,27 @@
       width: 4rem;
       height: 4rem;
     }
-  }
 
-  // show / hide helpers (scoped)
-  .lyrics-mobile-opened.closed,
-  .lyrics-icon.closed,
-  .head-mobile-section.closed {
-    display: none;
-  }
-
-  // lyriccs opened
-  .lyric-div {
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 0.5rem;
-    height: 46rem;
-    width: 100%;
-
-    p {
-      font-size: 1.9rem;
-      font-weight: 700;
-      color: v.$main-title-color;
-      flex: 1;
-      min-width: 0;
-      margin: 0;
-      line-height: 1.6;
+    #full-control-main {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10001;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem 1.6rem calc(5rem + env(safe-area-inset-bottom));
+      background: none !important;
     }
-  }
-  .head-mobile-section-lyrics-opened {
-    padding: 2.8rem 0rem 2rem;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .album-photo-mobile {
-    width: 100%;
 
-    img {
-      width: 100%;
-      height: 35.4rem;
+    #full-control-main #control-page-main {
+      position: static;
+      padding-bottom: 0;
+    }
+
+    #full-control-main #control-page-main #control-list-main {
+      margin-top: 0;
     }
   }
 }
