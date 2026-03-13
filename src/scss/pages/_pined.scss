@@ -1,5 +1,5 @@
 .pinned__sidebar {
-    background-color: rgb(17, 17, 17) ;
+  background-color: rgb(17, 17, 17);
 }
 
 .pinned_home-btn {
@@ -48,7 +48,7 @@
 
   button:hover {
     background-color: rgba(137, 137, 137, 0.1);
-     border-radius: 0.5rem;
+    border-radius: 0.5rem;
     transform: scale(1.05);
   }
 
@@ -103,4 +103,9 @@
   .peend-card__meta {
     align-items: center;
   }
+}
+
+.pins-link {
+  background-color: rgba(32, 32, 32, 1);
+  border-radius: 0.5rem;
 }

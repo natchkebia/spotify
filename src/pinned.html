@@ -15,9 +15,9 @@
               <!-- Left Navigation -->
               <ul class="nav-links">
                 <li class="nav-item pinned_home-btn">
-                  <a href="./index.html" class="nav-link">
+                  <a href="./index.html" class="nav-link home-secondary">
                     <img
-                      src="./assets/images/header icons/home.png"
+                      src="./assets/images/artist/home icon.svg"
                       alt="Home icon"
                       class="nav-icon"
                     />
@@ -37,13 +37,19 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./search.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/search.png"
                       alt="Search icon"
                       class="nav-icon"
                     />
-                    <span>Search</span>
+                    <input
+                      type="text"
+                      name="search"
+                      id="search_input"
+                      placeholder="Search"
+                      class="search"
+                    />
                   </a>
                 </li>
               </ul>
@@ -103,9 +109,9 @@
             <nav class="mobile-navigation">
               <ul class="mobile-nav-links">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link">
+                  <a href="./index.html" class="nav-link home-secondary">
                     <img
-                      src="./assets/images/header icons/home.png"
+                      src="./assets/images/artist/home icon.svg"
                       alt="Home icon"
                       class="nav-icon"
                     />
@@ -123,7 +129,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./search.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/search.png"
                       alt="Search icon"
@@ -133,13 +139,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./liked.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/libary.png"
                       alt="My Library icon"
                       class="nav-icon"
                     />
-                    <span>My Library</span>
+                    <span>Library</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -174,7 +180,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item has-arrow">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link pins-link">
                     <div class="link-name">
                       <img
                         src="./assets/images/aside icons/pin.png"
@@ -192,7 +198,7 @@
                 </li>
 
                 <li class="sidebar-item has-arrow">
-                  <a href="#" class="sidebar-link">
+                  <a href="./playlist.html" class="sidebar-link">
                     <div class="link-name">
                       <img
                         src="./assets/images/aside icons/playlist.png"
@@ -210,7 +216,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="./liked.html" class="sidebar-link">
                     <img
                       src="./assets/images/aside icons/liked.png"
                       alt="Liked songs icon"
@@ -276,7 +282,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="./artist.html" class="sidebar-link">
                     <img
                       src="./assets/images/aside icons/artists.png"
                       alt="Artists icon"
@@ -1079,12 +1085,12 @@
         <div>
           <div class="Playback-controls">
             <div class="Playback__controls--Progress-bar">
-              <button class="play-button">
+              <a href="./get-lucky.html" class="play-button">
                 <img
                   src="./assets/images/footer-icons/Play-Pause.svg"
                   alt="Play-Pause img"
                 />
-              </button>
+              </a>
               <button>
                 <img
                   src="./assets/images/footer-icons/Previous-track.svg"

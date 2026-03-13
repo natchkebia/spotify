@@ -10,6 +10,9 @@
   @include m.scroll-container;
   background-color: v.$main-backround-color;
   border: 0.1rem solid v.$border-soft;
+  position: sticky;
+  top: 0;
+  margin-bottom: calc(var(--footer-desktop-h) + var(--footer-gap) + 1rem);
 
   .home-section {
     display: flex;
@@ -70,7 +73,7 @@
     gap: 1.1rem;
     margin: 0 auto;
     margin-top: 1.5rem;
-    overflow-y: scroll;
+    overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
 

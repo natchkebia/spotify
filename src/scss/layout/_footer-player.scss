@@ -1,14 +1,25 @@
 @use "../abstracts/variables" as v;
 
 .layout__footer {
-  margin-top: 0.7rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 27rem; 
+  right: 0; 
+  z-index: 9999;
+  display: flex;
+  justify-content: center; 
+  pointer-events: none;
 
   > div {
     background-color: v.$footer-bg;
-    padding: 2rem 1.8rem;
+    padding: 1.2rem 1.8rem; 
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
+    pointer-events: auto;
+    width: 100%;
+    max-width: 147.9rem; 
+    margin: 0 2rem; 
 
     .Playback-controls {
       display: flex;
@@ -54,14 +65,17 @@
         width: 3.8rem;
         height: 3.2rem;
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition:
           transform 0.2s ease,
           box-shadow 0.2s ease;
 
-          img {
-            width: 0.7rem;
-            height: 1rem;
-          }
+        img {
+          width: 0.7rem;
+          height: 1rem;
+        }
       }
 
       .play-button:hover {
@@ -208,4 +222,3 @@
     }
   }
 }
-

@@ -6,11 +6,13 @@ html {
   max-width: 174.5rem;
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  position: relative;
 }
 
 body {
   font-family: "Satoshi", sans-serif;
-  background-color: rgba(6, 6, 6);
+  background-color: #060606;
 }
 
 .layout {
@@ -37,7 +39,22 @@ body {
 }
 .layout__main {
   grid-area: main;
+  display: flex;
+  gap: 1rem;
 }
 .layout__footer {
   grid-area: footer;
+}
+
+@keyframes bodyFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: bodyFade 0.1s linear forwards;
 }

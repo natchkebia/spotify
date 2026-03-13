@@ -37,13 +37,19 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./search.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/search.png"
                       alt="Search icon"
                       class="nav-icon"
                     />
-                    <span>Search</span>
+                    <input
+                      type="text"
+                      name="search"
+                      id="search_input"
+                      placeholder="Search"
+                      class="search"
+                    />
                   </a>
                 </li>
               </ul>
@@ -69,9 +75,16 @@
                 </li>
 
                 <li>
-                  <a href="#" aria-label="Friends">
+                  <a href="#" aria-label="Friends" class="friend-panel-open">
                     <img
+                      class="friend-panel-closed-img"
                       src="./assets/images/header icons/friend.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="friend-panel-opened-img"
+                      src="./assets/images/header icons/friend-opened.png"
                       alt=""
                       aria-hidden="true"
                     />
@@ -123,7 +136,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./search.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/search.png"
                       alt="Search icon"
@@ -133,17 +146,17 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./liked.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/libary.png"
                       alt="My Library icon"
                       class="nav-icon"
                     />
-                    <span>My Library</span>
+                    <span>Library</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./liked.html" class="nav-link">
                     <img
                       src="./assets/images/header icons/me.png"
                       alt="My Library icon"
@@ -192,7 +205,7 @@
                 </li>
 
                 <li class="sidebar-item has-arrow">
-                  <a href="#" class="sidebar-link">
+                  <a href="./playlist.html" class="sidebar-link">
                     <div class="link-name">
                       <img
                         src="./assets/images/aside icons/playlist.png"
@@ -210,7 +223,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="./liked.html" class="sidebar-link">
                     <img
                       src="./assets/images/aside icons/liked.png"
                       alt="Liked songs icon"
@@ -276,7 +289,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="./artist.html" class="sidebar-link">
                     <img
                       src="./assets/images/aside icons/artists.png"
                       alt="Artists icon"
@@ -943,6 +956,134 @@
             <!-- Browse all section -->
           </div>
         </section>
+        <!-- friend avtivity  -->
+        <div class="friend-activity close">
+          <div class="active-control-panel">
+            <h2>Friends Activity</h2>
+
+            <div class="add-exit">
+              <img
+                class="friend-add"
+                src="./assets/images/friedn-activity-icons/add-friend.png"
+                alt="add friend"
+              />
+              <img
+                class="exit-friend-panel"
+                src="./assets/images/friedn-activity-icons/exit.png"
+                alt="close panel"
+              />
+            </div>
+          </div>
+
+          <div class="friend-active-log">
+            <!-- friend list cards -->
+            <!-- friend 1 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend1.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">FriendlyMusicListener</p>
+
+                <div class="active-log">
+                  <img
+                    src="./assets/images/friedn-activity-icons/active.png"
+                    alt="active"
+                  />
+
+                  <div class="log">
+                    <p class="song-name">Goosebumps</p>
+                    <span class="circle-dot"></span>
+                    <p>Travis Scott</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 1 -->
+            <!-- friend 2 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend3.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">AverageMusicEnjoyer</p>
+
+                <div class="active-log">
+                  <img
+                    src="./assets/images/friedn-activity-icons/active.png"
+                    alt="active"
+                  />
+
+                  <div class="log">
+                    <p class="song-name">Get Lucky</p>
+                    <span class="circle-dot"></span>
+                    <p>Daft Punk</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 2 -->
+            <!-- friend 3 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend1.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">MusicEnthusiast</p>
+
+                <div class="active-log">
+                  <p class="active-ago">1h</p>
+
+                  <div class="log">
+                    <p class="song-name">would he</p>
+                    <span class="circle-dot"></span>
+                    <p>Daft Punk</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 3 -->
+            <!-- friend 4 -->
+            <div class="friend-list-person">
+              <div class="friend-img">
+                <img
+                  src="./assets/images/friedn-activity-icons/friend1.png"
+                  alt="friend avatar"
+                />
+              </div>
+
+              <div class="friend-info">
+                <p class="friend-name">IListenToMusic56</p>
+
+                <div class="active-log">
+                  <p class="active-ago">6h</p>
+
+                  <div class="log">
+                    <p class="song-name">Rockstar</p>
+                    <span class="circle-dot"></span>
+                    <p>Post Malone</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- friend 4 -->
+          </div>
+        </div>
+
+        <!-- friend list cards end -->
+        <!-- friend avtivity  end-->
         <!-- main page main content -->
       </div>
       <!-- footer section -->
@@ -950,12 +1091,12 @@
         <div>
           <div class="Playback-controls">
             <div class="Playback__controls--Progress-bar">
-              <button class="play-button">
+              <a href="./get-lucky.html" class="play-button">
                 <img
                   src="./assets/images/footer-icons/Play-Pause.svg"
                   alt="Play-Pause img"
                 />
-              </button>
+              </a>
               <button>
                 <img
                   src="./assets/images/footer-icons/Previous-track.svg"
@@ -1078,5 +1219,25 @@
       </div>
       <!-- footer section -->
     </div>
+    <script>
+      document
+        .querySelector(".exit-friend-panel")
+        .addEventListener("click", () => {
+          document.querySelector(".friend-activity").classList.toggle("close");
+          document
+            .querySelector(".friend-panel-open")
+            .classList.toggle("active");
+        });
+      document
+        .querySelector(".friend-panel-open")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+
+          document.querySelector(".friend-activity").classList.toggle("close");
+          document
+            .querySelector(".friend-panel-open")
+            .classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
