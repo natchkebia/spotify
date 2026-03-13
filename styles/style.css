@@ -1156,6 +1156,9 @@ body {
   width: 3.8rem;
   height: 3.2rem;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .layout__footer > div .Playback__controls--Progress-bar .play-button img {
